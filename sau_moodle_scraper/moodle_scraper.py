@@ -94,7 +94,7 @@ for count, question in enumerate(qContainers):
         q_a.append(get_truefalse(qItem))
     elif 'multichoice' in classList:
         q_a.append(get_multichoice(qItem))
-    else: #If it's a question asking for a list BROKEN
+    else: #If you've reached this point, it's going to break
         q_a.append(qItem)
     
     q_a[count][0] = str(count + 1) + '. ' + q_a[count][0]
