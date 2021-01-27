@@ -6,20 +6,31 @@ from furl import furl #For... parsing HTML
 #Get fill-in-the-blank questions and answers
 def get_multianswer(input):
     qa = [''] * 2
-    for item in input.find('p').contents:
-        if isinstance(item, str):
-            item = item.replace(u'Â\xa0', u' ') #Replace non-breaking space with proper space
-            qa[0] += item
-        else:
-            qa[0] += '____'
 
-            if item.name != 'span':
-                continue
+    if not input.find('ul'):
+        for paragraph in input.find_all('p'):
+            for item in paragraph.contents:
+                if isinstance(item, str):
+                    item = item.replace(u'Â\xa0', u' ') #Replace non-breaking space with proper space
+                    qa[0] += item
+                else:
+                    qa[0] += '____'
 
+                    if item.name != 'span':
+                        continue
+
+                    if qa[1] != '':
+                        qa[1] += separator + item.find('input').attrs['value']
+                    else:
+                        qa[1] += item.find('input').attrs['value']
+    else: #If it's a list style thing
+        qa[0] = input.find('p')
+
+        for inputElem in input.find('ul').find_all('input'):
             if qa[1] != '':
-                qa[1] += separator + item.find('input').attrs['value']
+                qa[1] += separator + inputElem.attrs['value']
             else:
-                qa[1] += item.find('input').attrs['value']
+                qa[1] += inputElem.attrs['value']
         
     return qa
 
@@ -71,7 +82,7 @@ def get_multichoice(input):
     return qa
 
 
-file = codecs.open('raw.html', 'r') #Get HTML file text
+file = codecs.open('raw_old_1.html', 'r') #Get HTML file text
 
 page = BeautifulSoup(file, 'lxml')
 name = page.title.text.replace(' ', '_')
@@ -97,7 +108,7 @@ for count, question in enumerate(qContainers):
     else: #If you've reached this point, it's going to break
         q_a.append(qItem)
     
-    q_a[count][0] = str(count + 1) + '. ' + q_a[count][0]
+    q_a[count][0] = str(count + 1) + '. ' + str(q_a[count][0])
 
 with open('output.csv', mode='w') as output:
     writer = csv.writer(output)

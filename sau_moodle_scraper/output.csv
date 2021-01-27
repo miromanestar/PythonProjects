@@ -1,15 +1,43 @@
 Questions,Answers
-1. Which type of virus can change every time it is executed in an attempt to avoid antivirus detection?,Polymorphic
-2. Active interception is the act of exploiting a bug or design flaw in software.,False
-3. Opening mail relays can decrease the amount of spam that an organization receives on its e-mail server.,False
-4. A RAT is an example of a Trojan horse.,True
-5. Viruses self-replicate whereas worms do not.,False
-6. Which of the following is the best option to use to prevent spyware?,Windows Defender
-7. Which of the following can help to prevent spam? (Select the two best answers.),"Use a spam filter., Close open mail relays."
-8. A master computer controls a botnet.,True
-9. Ransomware holds a user's files for ransom by encrypting them.,True
-10. Malware is software designed to infiltrate a computer system without the user's consent.,True
-11. Which of the following methods of malware delivery is used in computer programs to bypass normal authentication?,Backdoor
-12. Which of the following is NOT a typical symptom of a virus?,Excessive pop-up windows appear.
-13. Back Orifice is an example of a backdoor.,True
-14. Which of the following is an example of spyware?,Internet Optimizer
+"1. The collection of data, usually referred to as the ____, contains information relevant to an enterprise.",database
+2. A database-management system (DBMS) is a collection of ____ ____ and a set of ____ to access those data.,"interelated, data, programs"
+3. The term ____ ____ referes loosely to the process of semiautomatically analyzing large databases to find useful patterns.,"data, mining"
+4. A change that occurs in its entirety or not at all is said to be ____.,atomic
+"5. If two people change an amount X at the same time each adding 5. Then the may both write back X+5, when in reality it should be X+10. This is an example of a ____-____ ____.","concurrent, access, anomalies"
+"6. With data being stored by several different programs with different purposes, data could be repeated, this is called ____ ____. The data could also be changed in one file while remaining the same in a different file. This is called ____ ____.Because data could be stored in different files in different formats and accessed by different programs, there is also the problem of ____ ____.","data, redundancy, data, inconsistency, data, isolation"
+"7. Before database management systems existed, programmers wrote applications that directly accessed files via the operating systems. This type of system is called a ____-____ ____.","file, processing, system"
+"8. When data values stored in a file must satisfy certain types of ____ constraints, but different programs create and edit the data, the data may have ____ problems.","consistency, integrity"
+9. Not all users of a database should be able to access all of the data. In a file-processing system this leads to ____ ____.,"security, problems"
+"10. Hiding complexity in levels of abstractions is a common theme in computer science. In DBMS there are three levels. The ____ ____ describes what data are stored in te database, and what relationships exist among those data.","logical, level"
+11. Hiding complexity in levels of abstractions is a common theme in computer science. In DBMS there are three levels. The ____ ____ describes how the data are actually  stored.,"physical, level"
+12. Hiding complexity in levels of abstractions is a common theme in computer science. In DBMS there are three levels. The ____ ____ of abstraction exists to simplify users interaction with the system.,"view, level"
+"13. A ____ ____ is a collection of conceptual tools for describing data, data relationships, data semantics, and consistency constraints. A ____ ____ provides a way to describe the design of a database at the physical, logical, and view levels.","data, model, data, model"
+"14. Match up the following data models.<br /><br />This model uses a colleciton of tables to represent both data and relationships. Tables are called relations. This model is the most widely used datamodel by current database systems.<br /><br />This data model uses a collection of basic objects to graphically represent the data and relationships between the data. This model is widely used in database design.<br /><br />This data model is more popular in programming than in databases, but has gained some traction as an extension to the more popular data models.<br /><br />Data modeled by this model is commonly stored as XML.<br /><br />These models are of Historical interest only.","Relational Model, Entity-Relationship Model, Object-Relational Model, Semistructured Data Model, Network data and Hierarchical data models"
+"15. At the lowest level, a record including an ID, name, and salary may be represented as a ____ of consecutive storage locations. At the middle level, each such record is described by a ____ ____. At the highest level users see a set of ____ ____ that hide details of the data types.","block, type, definition, application, programs"
+16. The overall design of the database is called an instance.,False
+17. The overall design of the database is called the database schema.,True
+18. Match the definitons to different types of constraints.<br /><br />_______ constraints are the most elementary form of integrity constraint. This constraint checks to see if a value entered for a field is within a set of values.<br /><br />There are cases where we wish to ensure that a value that appears in one relation for a given set of attributes also appears in a certain set of attributes in another relation. <br /><br />An a set of arbitrary conditiond that the database must always satisfy.<br /><br />We may want to differentiate the type of access allowed different users. The type of constraint that defines this access is called an _________.,"domain, Referential Integrity, Assertions, Authorization"
+19. We specify a database schema by a set of definitions expressed by a special language called a ____-____ ____.,"data, definition, language"
+20. Declaritive DMLs require a user to specify ____ data are needed ____ specifying how to get those data.,"what, without"
+21. A data-manipulation language (DML) is a language that enables users to ____ or ____ data as organized by the appropriate data model.,"access, manipulate"
+22. Procedureal DMLs require a user to specify ____ data are needed and ____ to get those data.,"what, how"
+23. A relational database is based on the relational model and uses a collection of ____ to represent both data and relationships amonge those data. It uses ____ for both DML and DDL. Tables have ____ columns and ____ names for each column.,"tables, declarative, multiple, unique"
+"24. The database design takes place in the following steps:
+
+Characterize fully the data needs of the prospective database users.
+Choose a data model
+Translate the requirements into a conceptual schema using the data model
+Review the model for completeness with regard to the functional requirements, check for conflicts, and remove redundancies
+",True
+25. An ____ is a thing or object in the real world that is distinguishable from other objects.,entity
+26. Entities are described by a set of ____.,attributes
+27. A ____ is an association among several entities.,relationship
+28. The set of all entities of the same type and the set of all relationships of the same type are termed ____ ____  and ____ ____ respectively.,"entity, set, relationship, set"
+29. ____ ____ express the number of entities to which another entity can be associated via relationship set.,"Mapping, cardinalities"
+30. The implementation of a database design first requires a physical-design phase and then a logical-design phase.,False
+31. Another method for ____ a relational database is to use a process caommonly known as normalization to place the database in a normal form. The most common approach used to normalize a database uses ____ ____.,"designing, functional, dependencies"
+32. The data dictionary data structures store metadata about the structure of the database schema.,True
+33. The query processor is responsible for query optimization.,True
+34. <p>The storage manager components include ( blue text in book order):</p>,"authorization and integrity manager, transaction manager, file manager, buffer manager"
+"35. A transaction is a collection of operations that performs a single logical unit of work or function in a database. Transactions are usually atomic in nature to fullfill a requirement called ____. Once data is entered into a database, it should persist in the database. This requirement is called ____. To maintain these requirements, the transaction manager consists of the ____-____ manager and the ____ manager.","consistency, durability, concurrency, control, recovery"
+36. Database applications usually partition into a ____-____ architecture.,"two, tier"
