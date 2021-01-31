@@ -82,7 +82,7 @@ def get_multichoice(input):
     return qa
 
 
-file = codecs.open('raw_old_1.html', 'r') #Get HTML file text
+file = codecs.open('raw.html', 'r') #Get HTML file text
 
 page = BeautifulSoup(file, 'lxml')
 name = page.title.text.replace(' ', '_')
