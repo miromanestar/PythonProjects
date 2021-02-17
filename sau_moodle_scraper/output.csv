@@ -1,15 +1,19 @@
 Questions,Answers
-1. Full device encryption is one way of protecting a mobile device's data if the device is stolen.,True
-2. Storage DLP systems are typically installed in data centers or server rooms as software that inspects data at rest.,True
-3. Botnets do not affect mobile devices.,False
-4. Which of the following is an inline device that checks all packets?,Network intrusion detection system
-5. Which of the following is an example of whole disk encryption?,BitLocker
-6. Flashing is a term that describes the updating of the BIOS.,True
-7. An example of a Windows firewall is iptables.,False
-"8. In the case of theft, the two best ways to protect against the loss of confidential or sensitive information are encryption and a remote wipe program.",True
-9. Personal firewalls are applications that protect an individual computer from unwanted Internet traffic.,True
-10. Which of the following is an example of a personal software firewall?,ZoneAlarm
-11. What are two ways of discouraging bluesnarfing? (Select the two best answers.),"Select a pairing key that is not easy to guess., Set the device to undiscoverable."
-12. Which of the following occurs when an IDS identifies legitimate activity as something malicious?,False positive
-13. Bluejacking is the unauthorized access of information from a wireless device through a Bluetooth connection.,False
-14. Which of the following can help to secure the BIOS of a computer? (Select the two best answers.),"Use a case lock., Use a BIOS supervisor password."
+"1. By checking CVEs, you can keep informed of the latest attacks to web servers.",True
+2. An intranet enables multiple companies to access a secure area of a company's network.,False
+3. The network 10.0.0.0 is a Class B private IP network.,False
+4. Which of the following refers to a cloud computing service where a large service provider integrates its security services into a customer's existing infrastructure?,SECaaS
+5. Which of the following ways can help secure a modem? (Select the two best answers.),"Use the callback feature., Use strong passwords."
+6. NAT is sometimes also known as IP masquerading.,True
+7. Which of the following is not an example of good FTP server security?,Use port 20.
+8. A DMZ is a special area of the network accessed by clients on the Internet.,True
+9. A MAC flood is when a person accesses a single port of a switch that was not physically secured.,False
+10. Which of the following is not an example of good cloud security?,Eight-character passwords
+11. Network access control (NAC) sets rules by which network connections are governed.,True
+12. One way to defend against a double-tagging attack is to put unplugged ports on the switch into an unused VLAN.,False
+"13. Which of the following is used to house FTP servers, mail servers, and web servers so that people on the Internet can access them but cannot access any other of the organization's servers?",DMZ
+14. Access control lists enable or deny traffic and can be configured to help secure a router.,True
+15. One way to protect a WAN is to place all the computers behind a router.,False
+16. One example of PaaS is a Gmail email account.,False
+17. Subnetting increases security by compartmentalizing a network.,True
+18. Which of the following cloud computing services would be in use if an organization were using Gmail?,SaaS
