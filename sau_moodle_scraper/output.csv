@@ -1,19 +1,14 @@
 Questions,Answers
-"1. By checking CVEs, you can keep informed of the latest attacks to web servers.",True
-2. An intranet enables multiple companies to access a secure area of a company's network.,False
-3. The network 10.0.0.0 is a Class B private IP network.,False
-4. Which of the following refers to a cloud computing service where a large service provider integrates its security services into a customer's existing infrastructure?,SECaaS
-5. Which of the following ways can help secure a modem? (Select the two best answers.),"Use the callback feature., Use strong passwords."
-6. NAT is sometimes also known as IP masquerading.,True
-7. Which of the following is not an example of good FTP server security?,Use port 20.
-8. A DMZ is a special area of the network accessed by clients on the Internet.,True
-9. A MAC flood is when a person accesses a single port of a switch that was not physically secured.,False
-10. Which of the following is not an example of good cloud security?,Eight-character passwords
-11. Network access control (NAC) sets rules by which network connections are governed.,True
-12. One way to defend against a double-tagging attack is to put unplugged ports on the switch into an unused VLAN.,False
-"13. Which of the following is used to house FTP servers, mail servers, and web servers so that people on the Internet can access them but cannot access any other of the organization's servers?",DMZ
-14. Access control lists enable or deny traffic and can be configured to help secure a router.,True
-15. One way to protect a WAN is to place all the computers behind a router.,False
-16. One example of PaaS is a Gmail email account.,False
-17. Subnetting increases security by compartmentalizing a network.,True
-18. Which of the following cloud computing services would be in use if an organization were using Gmail?,SaaS
+"1. If a server has inbound port 21 open, what service is it running?",File Transfer Protocol
+"2. To use the Lightweight Directory Access Protocol (LDAP) in a secure fashion, what port should be used?",636
+3. Which of the following commands can be used to turn off a service?,net stop
+4. Which of the following port numbers is used by the Character Generator (CHARGEN)?,19
+5. Your boss wants you to secure your web server's transactions. Which protocol and port number should you use to accomplish this?,HTTPS - port 443
+6. Which of the following is not a denial-of-service attack?,Replay attack
+7. Which of the following can best be described as the exploitation of a computer session in an attempt to gain unauthorized access to data?,Session hijacking
+8. Which of the following are ways to help defend against distributed denial-of-service attacks? (Select the three best answers.),"Update firewalls., Use intrusion prevention systems., Use a ""clean pipe."""
+9. Port 88 is used by Kerberos.,True
+10. Syslog uses port 161.,False
+11. Port 53 is used by the DoS protocol.,False
+12. RADIUS uses port 1812.,True
+13. Port 443 is used by Ms-sql-s.,False
