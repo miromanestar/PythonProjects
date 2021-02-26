@@ -1,4 +1,5 @@
 import csv
+import os
 import codecs #For importing HTML
 from bs4 import BeautifulSoup #For parsing HTML
 from furl import furl #For... parsing HTML
@@ -81,7 +82,6 @@ def get_multichoice(input):
 
     return qa
 
-
 file = codecs.open('raw.html', 'r') #Get HTML file text
 
 page = BeautifulSoup(file, 'lxml')
@@ -114,3 +114,5 @@ with open('output.csv', mode='w') as output:
     writer = csv.writer(output)
     writer.writerow(['Questions', 'Answers'])
     writer.writerows(q_a)
+
+print('Success')

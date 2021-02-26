@@ -2,19 +2,34 @@
 
 <html  dir="ltr" lang="en-us" xml:lang="en-us">
 <head>
+<<<<<<< HEAD
     <title>Quiz 04: Attempt review</title>
     <link rel="shortcut icon" href="https://eclass.e.southern.edu/theme/image.php/boost/theme/1612253157/favicon" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"06560f3a30",applicationID:"5367078"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(6),c=e(7),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(8);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(5),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,w=["click","keydown","mousedown","pointerdown","touchstart"];w.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],4:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],5:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],6:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],7:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],8:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?u(e,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){e&&a&&e(n,r,i);for(var c=t(i),f=v(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[h[n]];return p&&p.push([b,n,r,c]),c}}function o(e,t){y[e]=v(e).concat(t)}function m(e,t){var n=y[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return y[e]||[]}function g(e){return p[e]=p[e]||i(n)}function w(e,t){s(e,function(e,n){t=t||"feature",h[n]=t,t in d||(d[t]=[])})}var y={},h={},b={on:o,addEventListener:o,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:w,abort:c,aborted:!1};return b}function o(e){return u(e,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=e("gos"),s=e(6),d={},p={},l=t.exports=i();t.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=b.info=NREUM.info,t=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(y,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+b.offset],null,"api"),c("timing",["load",n]);var r=p.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===p.readyState&&o()}function o(){c("mark",["domContent",a()+b.offset],null,"api")}var a=e(2),c=e("handle"),f=e(6),u=e("ee"),s=e(4),d=window,p=d.document,l="addEventListener",m="attachEvent",v=d.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:v,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var w=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1194.min.js"},h=v&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),b=t.exports={offset:a.getLastTimestamp(),now:a,origin:w,features:{},xhrWrappable:h,userAgent:s};e(1),e(3),p[l]?(p[l]("DOMContentLoaded",o,!1),d[l]("load",r,!1)):(p[m]("onreadystatechange",i),d[m]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var x=0},{}],"wrap-function":[function(e,t,n){function r(e,t){function n(t,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],e)}c(n+"start",[o,a,f],s,u);try{return p=t.apply(a,o)}catch(m){throw c(n+"err",[o,a,m],s,u),m}finally{c(n+"end",[o,a,p],s,u)}}return a(t)?t:(n||(n=""),nrWrapper[p]=t,o(t,nrWrapper,e),nrWrapper)}function r(e,t,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<t.length;u++)f=t[u],c=e[f],a(c)||(e[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!m||t){var c=m;m=!0;try{e.emit(n,r,o,t,a)}catch(f){i([f,n,r,o],e)}m=c}}return e||(e=s),n.inPlace=r,n.flag=p,n}function i(e,t){t||(t=s);try{t.emit("internal-error",e)}catch(n){}}function o(e,t,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(e);return r.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(o){i([o],n)}for(var a in e)l.call(e,a)&&(t[a]=e[a]);return t}function a(e){return!(e&&e instanceof Function&&e.apply&&!e[p])}function c(e,t){var n=t(e);return n[p]=e,o(e,n,s),n}function f(e,t,n){var r=e[t];e[t]=c(r,n)}function u(){for(var e=arguments.length,t=new Array(e),n=0;n<e;++n)t[n]=arguments[n];return t}var s=e("ee"),d=e(7),p="nr@original",l=Object.prototype.hasOwnProperty,m=!1;t.exports=r,t.exports.wrapFunction=c,t.exports.wrapInPlace=f,t.exports.argsToArray=u},{}]},{},["loader"]);</script>
 <meta name="keywords" content="moodle, Quiz 04: Attempt review" />
 <link rel="stylesheet" type="text/css" href="https://eclass.e.southern.edu/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.css" /><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="https://eclass.e.southern.edu/theme/styles.php/boost/1612253157_1609317819/all" />
+=======
+    <title>Quiz 4: Attempt review</title>
+    <link rel="shortcut icon" href="https://eclass.e.southern.edu/theme/image.php/boost/theme/1613722060/favicon" />
+    <meta name="apple-itunes-app" content="app-id=1553337282, app-argument=https://eclass.e.southern.edu/mod/quiz/review.php?attempt=1172771&amp;cmid=1021046"/><link rel="manifest" href="https://eclass.e.southern.edu/admin/tool/mobile/mobile.webmanifest.php" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"06560f3a30",applicationID:"5367078"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(6),c=e(7),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(8);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(5),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,w=["click","keydown","mousedown","pointerdown","touchstart"];w.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],4:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],5:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],6:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],7:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],8:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?u(e,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){e&&a&&e(n,r,i);for(var c=t(i),f=v(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[h[n]];return p&&p.push([b,n,r,c]),c}}function o(e,t){y[e]=v(e).concat(t)}function m(e,t){var n=y[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return y[e]||[]}function g(e){return p[e]=p[e]||i(n)}function w(e,t){s(e,function(e,n){t=t||"feature",h[n]=t,t in d||(d[t]=[])})}var y={},h={},b={on:o,addEventListener:o,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:w,abort:c,aborted:!1};return b}function o(e){return u(e,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=e("gos"),s=e(6),d={},p={},l=t.exports=i();t.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=b.info=NREUM.info,t=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(y,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+b.offset],null,"api"),c("timing",["load",n]);var r=p.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===p.readyState&&o()}function o(){c("mark",["domContent",a()+b.offset],null,"api")}var a=e(2),c=e("handle"),f=e(6),u=e("ee"),s=e(4),d=window,p=d.document,l="addEventListener",m="attachEvent",v=d.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:v,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var w=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1198.min.js"},h=v&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),b=t.exports={offset:a.getLastTimestamp(),now:a,origin:w,features:{},xhrWrappable:h,userAgent:s};e(1),e(3),p[l]?(p[l]("DOMContentLoaded",o,!1),d[l]("load",r,!1)):(p[m]("onreadystatechange",i),d[m]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var x=0},{}],"wrap-function":[function(e,t,n){function r(e,t){function n(t,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],e)}c(n+"start",[o,a,f],s,u);try{return p=t.apply(a,o)}catch(m){throw c(n+"err",[o,a,m],s,u),m}finally{c(n+"end",[o,a,p],s,u)}}return a(t)?t:(n||(n=""),nrWrapper[p]=t,o(t,nrWrapper,e),nrWrapper)}function r(e,t,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<t.length;u++)f=t[u],c=e[f],a(c)||(e[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!m||t){var c=m;m=!0;try{e.emit(n,r,o,t,a)}catch(f){i([f,n,r,o],e)}m=c}}return e||(e=s),n.inPlace=r,n.flag=p,n}function i(e,t){t||(t=s);try{t.emit("internal-error",e)}catch(n){}}function o(e,t,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(e);return r.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(o){i([o],n)}for(var a in e)l.call(e,a)&&(t[a]=e[a]);return t}function a(e){return!(e&&e instanceof Function&&e.apply&&!e[p])}function c(e,t){var n=t(e);return n[p]=e,o(e,n,s),n}function f(e,t,n){var r=e[t];e[t]=c(r,n)}function u(){for(var e=arguments.length,t=new Array(e),n=0;n<e;++n)t[n]=arguments[n];return t}var s=e("ee"),d=e(7),p="nr@original",l=Object.prototype.hasOwnProperty,m=!1;t.exports=r,t.exports.wrapFunction=c,t.exports.wrapInPlace=f,t.exports.argsToArray=u},{}]},{},["loader"]);</script>
+<meta name="keywords" content="moodle, Quiz 4: Attempt review" />
+<link rel="stylesheet" type="text/css" href="https://eclass.e.southern.edu/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.css" /><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="https://eclass.e.southern.edu/theme/styles.php/boost/1613722060_1613026747/all" />
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
 <script>
 //<![CDATA[
 var M = {}; M.yui = {};
 M.pageloadstarttime = new Date();
+<<<<<<< HEAD
 M.cfg = {"wwwroot":"https:\/\/eclass.e.southern.edu","sesskey":"2j1RFvndmv","sessiontimeout":"14400","themerev":"1612253157","slasharguments":1,"theme":"boost","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1612253157","admin":"admin","svgicons":true,"usertimezone":"America\/New_York","contextid":1331036,"langrev":1612253157,"templaterev":"1612253157"};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
 var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
 if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
 YUI_config = {"debug":false,"base":"https:\/\/eclass.e.southern.edu\/lib\/yuilib\/3.17.2\/","comboBase":"https:\/\/eclass.e.southern.edu\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/eclass.e.southern.edu\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/eclass.e.southern.edu\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/eclass.e.southern.edu\/theme\/yui_combo.php?m\/1612253157\/","combine":true,"comboBase":"https:\/\/eclass.e.southern.edu\/theme\/yui_combo.php?","ext":false,"root":"m\/1612253157\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-passwordunmask":{"requires":[]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-core_outcome-models":{"requires":["base","model","model-list","moodle-core_outcome-simpleio","json-stringify"]},"moodle-core_outcome-dynamicpanel":{"requires":["base","moodle-core_outcome-simpleio","classnamemanager","moodle-core-notification-dialogue","moodle-core_outcome-scrollpanel"]},"moodle-core_outcome-outcomepanel":{"requires":["base","handlebars","moodle-core_outcome-models","moodle-core_outcome-scrollpanel","moodle-core_outcome-ariacontrol","moodle-core_outcome-ariacontrolled","moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core_outcome-simpleio"]},"moodle-core_outcome-scrollpanel":{"requires":["plugin","widget","panel"]},"moodle-core_outcome-editoutcome":{"requires":["widget","event-valuechange","handlebars","json-parse","json-stringify","moodle-core_outcome-models","moodle-core-notification-dialogue","moodle-core-notification-exception"]},"moodle-core_outcome-mapoutcomeset":{"requires":["widget","model","model-list","handlebars","json-parse","json-stringify","moodle-core_outcome-models","moodle-core-notification-dialogue","moodle-core-notification-exception","moodle-core-notification-alert","moodle-core_outcome-simpleio"]},"moodle-core_outcome-simpleio":{"requires":["base","io-base","json-parse","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core_outcome-ariacontrol":{"requires":["plugin","widget","escape"]},"moodle-core_outcome-ariacontrolled":{"requires":["plugin","widget"]},"moodle-core_outcome-mapoutcome":{"requires":["widget","handlebars","json-parse","json-stringify","moodle-core_outcome-models","moodle-core_outcome-outcomepanel","moodle-core-notification-exception"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_releasecode-form":{"requires":["base","node","event","event-valuechange","moodle-core_availability-form"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_attendance-groupfilter":{"requires":["base","node"]},"moodle-mod_customcert-rearrange":{"requires":["dd-delegate","dd-drag"]},"moodle-mod_hsuforum-io":{"requires":["base","io-base","io-form","io-upload-iframe","json-parse"]},"moodle-mod_hsuforum-article":{"requires":["base","node","event","router","core_rating","querystring","moodle-mod_hsuforum-io","moodle-mod_hsuforum-livelog","moodle-core-formchangechecker"]},"moodle-mod_hsuforum-livelog":{"requires":["widget"]},"moodle-mod_iassign-history":{"requires":["node","transition"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-block_gapps-gmail":{"requires":["base","event","handlebars"]},"moodle-block_gapps-popup":{"requires":["base","event"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-report_outcome-autocomplete":{"requires":["base","autocomplete","autocomplete-filters","autocomplete-highlighters"]},"moodle-report_outcome-resetoptions":{"requires":["base","moodle-core_outcome-simpleio"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-warning","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bsgrid-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_chemistry-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_count-button":{"requires":["io","json-parse","moodle-editor_atto-plugin"]},"moodle-atto_emojipicker-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_filedragdrop-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_fullscreen-button":{"requires":["event-resize","moodle-editor_atto-plugin"]},"moodle-atto_h5p-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_hr-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_html-codemirror":{"requires":["moodle-atto_html-codemirror-skin"]},"moodle-atto_html-button":{"requires":["promise","moodle-editor_atto-plugin","moodle-atto_html-beautify","moodle-atto_html-codemirror","event-valuechange"]},"moodle-atto_html-beautify":{},"moodle-atto_htmlplus-codemirror":{"requires":["moodle-atto_htmlplus-codemirror-skin"]},"moodle-atto_htmlplus-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_htmlplus-beautify","moodle-atto_htmlplus-codemirror","event-valuechange"]},"moodle-atto_htmlplus-beautify":{},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_imagedragdrop-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_recordrtc-recording":{"requires":["moodle-atto_recordrtc-button"]},"moodle-atto_recordrtc-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_recordrtc-recording"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_teamsmeeting-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"https:\/\/eclass.e.southern.edu\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/eclass.e.southern.edu\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1612253157\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/eclass.e.southern.edu\/lib\/javascript.php\/1612253157\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/eclass.e.southern.edu\/lib\/javascript.php\/1612253157\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdn.jsdelivr.net\/npm\/mathjax@2.7.8\/MathJax.js?delayStartupUntil=configured"},"core_question_flags":{"name":"core_question_flags","fullpath":"https:\/\/eclass.e.southern.edu\/lib\/javascript.php\/1612253157\/question\/flags.js","requires":["base","dom","event-delegate","io-base"]},"core_question_engine":{"name":"core_question_engine","fullpath":"https:\/\/eclass.e.southern.edu\/lib\/javascript.php\/1612253157\/question\/qengine.js","requires":["node","event"]},"mod_quiz":{"name":"mod_quiz","fullpath":"https:\/\/eclass.e.southern.edu\/lib\/javascript.php\/1612253157\/mod\/quiz\/module.js","requires":["base","dom","event-delegate","event-key","core_question_engine","moodle-core-formchangechecker"]}}};
+=======
+M.cfg = {"wwwroot":"https:\/\/eclass.e.southern.edu","sesskey":"I1GNJE0yGR","sessiontimeout":"14400","themerev":"1613722060","slasharguments":1,"theme":"boost","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1613722060","admin":"admin","svgicons":true,"usertimezone":"America\/New_York","contextid":1317307,"langrev":1613722060,"templaterev":"1613722060"};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+YUI_config = {"debug":false,"base":"https:\/\/eclass.e.southern.edu\/lib\/yuilib\/3.17.2\/","comboBase":"https:\/\/eclass.e.southern.edu\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/eclass.e.southern.edu\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/eclass.e.southern.edu\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/eclass.e.southern.edu\/theme\/yui_combo.php?m\/1613722060\/","combine":true,"comboBase":"https:\/\/eclass.e.southern.edu\/theme\/yui_combo.php?","ext":false,"root":"m\/1613722060\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-passwordunmask":{"requires":[]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-core_outcome-models":{"requires":["base","model","model-list","moodle-core_outcome-simpleio","json-stringify"]},"moodle-core_outcome-dynamicpanel":{"requires":["base","moodle-core_outcome-simpleio","classnamemanager","moodle-core-notification-dialogue","moodle-core_outcome-scrollpanel"]},"moodle-core_outcome-outcomepanel":{"requires":["base","handlebars","moodle-core_outcome-models","moodle-core_outcome-scrollpanel","moodle-core_outcome-ariacontrol","moodle-core_outcome-ariacontrolled","moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core_outcome-simpleio"]},"moodle-core_outcome-scrollpanel":{"requires":["plugin","widget","panel"]},"moodle-core_outcome-editoutcome":{"requires":["widget","event-valuechange","handlebars","json-parse","json-stringify","moodle-core_outcome-models","moodle-core-notification-dialogue","moodle-core-notification-exception"]},"moodle-core_outcome-mapoutcomeset":{"requires":["widget","model","model-list","handlebars","json-parse","json-stringify","moodle-core_outcome-models","moodle-core-notification-dialogue","moodle-core-notification-exception","moodle-core-notification-alert","moodle-core_outcome-simpleio"]},"moodle-core_outcome-simpleio":{"requires":["base","io-base","json-parse","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core_outcome-ariacontrol":{"requires":["plugin","widget","escape"]},"moodle-core_outcome-ariacontrolled":{"requires":["plugin","widget"]},"moodle-core_outcome-mapoutcome":{"requires":["widget","handlebars","json-parse","json-stringify","moodle-core_outcome-models","moodle-core_outcome-outcomepanel","moodle-core-notification-exception"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_releasecode-form":{"requires":["base","node","event","event-valuechange","moodle-core_availability-form"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_attendance-groupfilter":{"requires":["base","node"]},"moodle-mod_customcert-rearrange":{"requires":["dd-delegate","dd-drag"]},"moodle-mod_hsuforum-io":{"requires":["base","io-base","io-form","io-upload-iframe","json-parse"]},"moodle-mod_hsuforum-article":{"requires":["base","node","event","router","core_rating","querystring","moodle-mod_hsuforum-io","moodle-mod_hsuforum-livelog","moodle-core-formchangechecker"]},"moodle-mod_hsuforum-livelog":{"requires":["widget"]},"moodle-mod_iassign-history":{"requires":["node","transition"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-block_gapps-gmail":{"requires":["base","event","handlebars"]},"moodle-block_gapps-popup":{"requires":["base","event"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-report_outcome-autocomplete":{"requires":["base","autocomplete","autocomplete-filters","autocomplete-highlighters"]},"moodle-report_outcome-resetoptions":{"requires":["base","moodle-core_outcome-simpleio"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-warning","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bsgrid-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_chemistry-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_count-button":{"requires":["io","json-parse","moodle-editor_atto-plugin"]},"moodle-atto_emojipicker-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_filedragdrop-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_fullscreen-button":{"requires":["event-resize","moodle-editor_atto-plugin"]},"moodle-atto_h5p-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_hr-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_html-codemirror":{"requires":["moodle-atto_html-codemirror-skin"]},"moodle-atto_html-button":{"requires":["promise","moodle-editor_atto-plugin","moodle-atto_html-beautify","moodle-atto_html-codemirror","event-valuechange"]},"moodle-atto_html-beautify":{},"moodle-atto_htmlplus-codemirror":{"requires":["moodle-atto_htmlplus-codemirror-skin"]},"moodle-atto_htmlplus-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_htmlplus-beautify","moodle-atto_htmlplus-codemirror","event-valuechange"]},"moodle-atto_htmlplus-beautify":{},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_imagedragdrop-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_recordrtc-recording":{"requires":["moodle-atto_recordrtc-button"]},"moodle-atto_recordrtc-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_recordrtc-recording"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_teamsmeeting-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"https:\/\/eclass.e.southern.edu\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/eclass.e.southern.edu\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1613722060\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/eclass.e.southern.edu\/lib\/javascript.php\/1613722060\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/eclass.e.southern.edu\/lib\/javascript.php\/1613722060\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdn.jsdelivr.net\/npm\/mathjax@2.7.8\/MathJax.js?delayStartupUntil=configured"},"core_question_flags":{"name":"core_question_flags","fullpath":"https:\/\/eclass.e.southern.edu\/lib\/javascript.php\/1613722060\/question\/flags.js","requires":["base","dom","event-delegate","io-base"]},"core_question_engine":{"name":"core_question_engine","fullpath":"https:\/\/eclass.e.southern.edu\/lib\/javascript.php\/1613722060\/question\/qengine.js","requires":["node","event"]},"mod_quiz":{"name":"mod_quiz","fullpath":"https:\/\/eclass.e.southern.edu\/lib\/javascript.php\/1613722060\/mod\/quiz\/module.js","requires":["base","dom","event-delegate","event-key","core_question_engine","moodle-core-formchangechecker"]}}};
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
 M.yui.loader = {modules: {}};
 
 //]]>
@@ -23,16 +38,26 @@ M.yui.loader = {modules: {}};
 <link rel="shortcut icon"   type="image/png" href="https://eclasscontent.southern.edu/dept/online/templates/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+<<<<<<< HEAD
 <body  id="page-mod-quiz-review" class="format-topics  path-mod path-mod-quiz chrome dir-ltr lang-en_us yui-skin-sam yui3-skin-sam eclass-e-southern-edu pagelayout-incourse course-42401 context-1331036 cmid-1034118 category-1076 category-1067 drawer-open-left">
+=======
+<body  id="page-mod-quiz-review" class="format-topcoll  path-mod path-mod-quiz chrome dir-ltr lang-en_us yui-skin-sam yui3-skin-sam eclass-e-southern-edu pagelayout-incourse course-42399 context-1317307 cmid-1021046 category-1076 category-1067 drawer-open-left">
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
 <div class="toast-wrapper mx-auto py-0 fixed-top" role="status" aria-live="polite"></div>
 
 <div id="page-wrapper" class="d-print-block">
 
     <div>
     <a class="sr-only sr-only-focusable" href="#maincontent">Skip to main content</a>
+<<<<<<< HEAD
 </div><script src="https://eclass.e.southern.edu/lib/javascript.php/1612253157/lib/babel-polyfill/polyfill.min.js"></script>
 <script src="https://eclass.e.southern.edu/lib/javascript.php/1612253157/lib/polyfills/polyfill.js"></script>
 <script src="https://eclass.e.southern.edu/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.js"></script><script src="https://eclass.e.southern.edu/lib/javascript.php/1612253157/lib/javascript-static.js"></script>
+=======
+</div><script src="https://eclass.e.southern.edu/lib/javascript.php/1613722060/lib/babel-polyfill/polyfill.min.js"></script>
+<script src="https://eclass.e.southern.edu/lib/javascript.php/1613722060/lib/polyfills/polyfill.js"></script>
+<script src="https://eclass.e.southern.edu/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.js"></script><script src="https://eclass.e.southern.edu/lib/javascript.php/1613722060/lib/javascript-static.js"></script>
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
 <script>
 //<![CDATA[
 document.body.className += ' jsenabled';
@@ -71,17 +96,30 @@ document.body.className += ' jsenabled';
     <div class="popover-region-toggle nav-link"
         data-region="popover-region-toggle"
         role="button"
+<<<<<<< HEAD
         aria-controls="popover-region-container-601a0046a4c49601a0046896e04"
+=======
+        aria-controls="popover-region-container-6032ff4f79add6032ff4f598e94"
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
         aria-haspopup="true"
         aria-label="Show notification window with no new notifications"
         tabindex="0">
                 <i class="icon fa fa-bell fa-fw "  title="Toggle notifications menu" aria-label="Toggle notifications menu"></i>
+<<<<<<< HEAD
         <div class="count-container hidden" data-region="count-container"
         aria-label="There are 0 unread notifications">0</div>
 
     </div>
     <div 
         id="popover-region-container-601a0046a4c49601a0046896e04"
+=======
+        <div class="count-container " data-region="count-container"
+        aria-label="There are 1 unread notifications">1</div>
+
+    </div>
+    <div 
+        id="popover-region-container-6032ff4f79add6032ff4f598e94"
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
         class="popover-region-container"
         data-region="popover-region-container"
         aria-expanded="false"
@@ -127,7 +165,11 @@ document.body.className += ' jsenabled';
                 </a>
     </div>
 </div><div class="popover-region collapsed" data-region="popover-region-messages">
+<<<<<<< HEAD
     <a id="message-drawer-toggle-601a0046a630f601a0046896e05" class="nav-link d-inline-block popover-region-toggle position-relative" href="#"
+=======
+    <a id="message-drawer-toggle-6032ff4f7b1c26032ff4f598e95" class="nav-link d-inline-block popover-region-toggle position-relative" href="#"
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
             role="button">
         <i class="icon fa fa-comment fa-fw "  title="Toggle messaging drawer" aria-label="Toggle messaging drawer"></i>
         <div class="count-container hidden" data-region="count-container"
@@ -175,7 +217,11 @@ document.body.className += ' jsenabled';
                                 <span class="menu-action-text" id="actionmenuaction-5">Preferences</span>
                         </a>
                     <div class="dropdown-divider" role="presentation"><span class="filler">&nbsp;</span></div>
+<<<<<<< HEAD
                                                                 <a href="https://eclass.e.southern.edu/login/logout.php?sesskey=2j1RFvndmv" class="dropdown-item menu-action" role="menuitem" data-title="logout,moodle" aria-labelledby="actionmenuaction-6">
+=======
+                                                                <a href="https://eclass.e.southern.edu/login/logout.php?sesskey=I1GNJE0yGR" class="dropdown-item menu-action" role="menuitem" data-title="logout,moodle" aria-labelledby="actionmenuaction-6">
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
                                 <i class="icon fa fa-sign-out fa-fw " aria-hidden="true"  ></i>
                                 <span class="menu-action-text" id="actionmenuaction-6">Log out</span>
                         </a>
@@ -192,22 +238,37 @@ document.body.className += ' jsenabled';
     </nav>
     
     <div id="nav-drawer" data-region="drawer" class="d-print-none moodle-has-zindex " aria-hidden="false" tabindex="-1">
+<<<<<<< HEAD
         <nav class="list-group" aria-label="W21 CPTR-427-A">
             <ul>
                     <li>
                         <a class="list-group-item list-group-item-action  " href="https://eclass.e.southern.edu/course/view.php?id=42401" data-key="coursehome" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="60" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" >
+=======
+        <nav class="list-group" aria-label="W21 CPTR-319-A">
+            <ul>
+                    <li>
+                        <a class="list-group-item list-group-item-action  " href="https://eclass.e.southern.edu/course/view.php?id=42399" data-key="coursehome" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="60" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" >
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
                             <div class="ml-0">
                                 <div class="media">
                                         <span class="media-left">
                                             <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"  ></i>
                                         </span>
+<<<<<<< HEAD
                                     <span class="media-body ">W21 CPTR-427-A</span>
+=======
+                                    <span class="media-body ">W21 CPTR-319-A</span>
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
                                 </div>
                             </div>
                         </a>
                     </li>
                     <li>
+<<<<<<< HEAD
                         <a class="list-group-item list-group-item-action  " href="https://eclass.e.southern.edu/user/index.php?id=42401" data-key="participants" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="90" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="42401">
+=======
+                        <a class="list-group-item list-group-item-action  " href="https://eclass.e.southern.edu/user/index.php?id=42399" data-key="participants" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="90" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="42399">
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
                             <div class="ml-0">
                                 <div class="media">
                                         <span class="media-left">
@@ -219,7 +280,11 @@ document.body.className += ' jsenabled';
                         </a>
                     </li>
                     <li>
+<<<<<<< HEAD
                         <a class="list-group-item list-group-item-action  " href="https://eclass.e.southern.edu/badges/view.php?type=2&amp;id=42401" data-key="badgesview" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="70" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="42401">
+=======
+                        <a class="list-group-item list-group-item-action  " href="https://eclass.e.southern.edu/badges/view.php?type=2&amp;id=42399" data-key="badgesview" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="70" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="42399">
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
                             <div class="ml-0">
                                 <div class="media">
                                         <span class="media-left">
@@ -231,7 +296,11 @@ document.body.className += ' jsenabled';
                         </a>
                     </li>
                     <li>
+<<<<<<< HEAD
                         <a class="list-group-item list-group-item-action  " href="https://eclass.e.southern.edu/admin/tool/lp/coursecompetencies.php?courseid=42401" data-key="competencies" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="70" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="42401">
+=======
+                        <a class="list-group-item list-group-item-action  " href="https://eclass.e.southern.edu/admin/tool/lp/coursecompetencies.php?courseid=42399" data-key="competencies" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="70" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="42399">
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
                             <div class="ml-0">
                                 <div class="media">
                                         <span class="media-left">
@@ -243,7 +312,11 @@ document.body.className += ' jsenabled';
                         </a>
                     </li>
                     <li>
+<<<<<<< HEAD
                         <a class="list-group-item list-group-item-action  " href="https://eclass.e.southern.edu/grade/report/index.php?id=42401" data-key="grades" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="70" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="42401">
+=======
+                        <a class="list-group-item list-group-item-action  " href="https://eclass.e.southern.edu/grade/report/index.php?id=42399" data-key="grades" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="70" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="42399">
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
                             <div class="ml-0">
                                 <div class="media">
                                         <span class="media-left">
@@ -255,6 +328,7 @@ document.body.className += ' jsenabled';
                         </a>
                     </li>
                     <li>
+<<<<<<< HEAD
                         <a class="list-group-item list-group-item-action  " href="https://eclass.e.southern.edu/course/view.php?id=42401#section-0" data-key="234560" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="42401">
                             <div class="ml-0">
                                 <div class="media">
@@ -316,142 +390,237 @@ document.body.className += ' jsenabled';
                     </li>
                     <li>
                         <a class="list-group-item list-group-item-action  " href="https://eclass.e.southern.edu/course/view.php?id=42401#section-5" data-key="241063" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="42401">
+=======
+                        <a class="list-group-item list-group-item-action  " href="https://eclass.e.southern.edu/course/view.php?id=42399#section-0" data-key="234552" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="42399">
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
                             <div class="ml-0">
                                 <div class="media">
                                         <span class="media-left">
                                             <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  ></i>
                                         </span>
+<<<<<<< HEAD
                                     <span class="media-body ">Week 6</span>
+=======
+                                    <span class="media-body ">Introduction</span>
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
                                 </div>
                             </div>
                         </a>
                     </li>
                     <li>
+<<<<<<< HEAD
                         <a class="list-group-item list-group-item-action  " href="https://eclass.e.southern.edu/course/view.php?id=42401#section-6" data-key="241064" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="42401">
+=======
+                        <a class="list-group-item list-group-item-action  " href="https://eclass.e.southern.edu/course/view.php?id=42399#section-1" data-key="234553" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="42399">
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
                             <div class="ml-0">
                                 <div class="media">
                                         <span class="media-left">
                                             <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  ></i>
                                         </span>
+<<<<<<< HEAD
                                     <span class="media-body ">Week 7</span>
+=======
+                                    <span class="media-body ">Database Scripts for all Chapters</span>
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
                                 </div>
                             </div>
                         </a>
                     </li>
                     <li>
+<<<<<<< HEAD
                         <a class="list-group-item list-group-item-action  " href="https://eclass.e.southern.edu/course/view.php?id=42401#section-7" data-key="241065" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="42401">
+=======
+                        <a class="list-group-item list-group-item-action  " href="https://eclass.e.southern.edu/course/view.php?id=42399#section-2" data-key="234555" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="42399">
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
                             <div class="ml-0">
                                 <div class="media">
                                         <span class="media-left">
                                             <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  ></i>
                                         </span>
+<<<<<<< HEAD
                                     <span class="media-body ">Week 8</span>
+=======
+                                    <span class="media-body ">Chapter 1: Basic Vocabulary</span>
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
                                 </div>
                             </div>
                         </a>
                     </li>
                     <li>
+<<<<<<< HEAD
                         <a class="list-group-item list-group-item-action  " href="https://eclass.e.southern.edu/course/view.php?id=42401#section-8" data-key="241066" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="42401">
+=======
+                        <a class="list-group-item list-group-item-action  " href="https://eclass.e.southern.edu/course/view.php?id=42399#section-3" data-key="239126" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="42399">
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
                             <div class="ml-0">
                                 <div class="media">
                                         <span class="media-left">
                                             <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  ></i>
                                         </span>
+<<<<<<< HEAD
                                     <span class="media-body ">Week 9</span>
+=======
+                                    <span class="media-body ">Chapter 2: Relational Databases</span>
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
                                 </div>
                             </div>
                         </a>
                     </li>
                     <li>
+<<<<<<< HEAD
                         <a class="list-group-item list-group-item-action  " href="https://eclass.e.southern.edu/course/view.php?id=42401#section-9" data-key="241069" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="42401">
+=======
+                        <a class="list-group-item list-group-item-action active " href="https://eclass.e.southern.edu/course/view.php?id=42399#section-4" data-key="239127" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="1" data-isactive="1" data-hidden="0" data-preceedwithhr="0" data-parent-key="42399">
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
                             <div class="ml-0">
                                 <div class="media">
                                         <span class="media-left">
                                             <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  ></i>
                                         </span>
+<<<<<<< HEAD
                                     <span class="media-body ">Week 10</span>
+=======
+                                    <span class="media-body font-weight-bold">Chapter 3-5: SQL</span>
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
                                 </div>
                             </div>
                         </a>
                     </li>
                     <li>
+<<<<<<< HEAD
                         <a class="list-group-item list-group-item-action  " href="https://eclass.e.southern.edu/course/view.php?id=42401#section-10" data-key="241070" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="42401">
+=======
+                        <a class="list-group-item list-group-item-action  " href="https://eclass.e.southern.edu/course/view.php?id=42399#section-5" data-key="239128" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="42399">
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
                             <div class="ml-0">
                                 <div class="media">
                                         <span class="media-left">
                                             <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  ></i>
                                         </span>
+<<<<<<< HEAD
                                     <span class="media-body ">Week 11</span>
+=======
+                                    <span class="media-body ">Chapter 7 Database Diagrams and Design</span>
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
                                 </div>
                             </div>
                         </a>
                     </li>
                     <li>
+<<<<<<< HEAD
                         <a class="list-group-item list-group-item-action  " href="https://eclass.e.southern.edu/course/view.php?id=42401#section-11" data-key="241071" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="42401">
+=======
+                        <a class="list-group-item list-group-item-action  " href="https://eclass.e.southern.edu/course/view.php?id=42399#section-6" data-key="239129" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="42399">
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
                             <div class="ml-0">
                                 <div class="media">
                                         <span class="media-left">
                                             <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  ></i>
                                         </span>
+<<<<<<< HEAD
                                     <span class="media-body ">Week 12</span>
+=======
+                                    <span class="media-body ">Chapter 8 Normalization</span>
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
                                 </div>
                             </div>
                         </a>
                     </li>
                     <li>
+<<<<<<< HEAD
                         <a class="list-group-item list-group-item-action  " href="https://eclass.e.southern.edu/course/view.php?id=42401#section-12" data-key="241072" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="42401">
+=======
+                        <a class="list-group-item list-group-item-action  " href="https://eclass.e.southern.edu/course/view.php?id=42399#section-7" data-key="239130" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="42399">
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
                             <div class="ml-0">
                                 <div class="media">
                                         <span class="media-left">
                                             <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  ></i>
                                         </span>
+<<<<<<< HEAD
                                     <span class="media-body ">Week 13</span>
+=======
+                                    <span class="media-body ">Chapter 20 Data Warehousing and Data Mining</span>
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
                                 </div>
                             </div>
                         </a>
                     </li>
                     <li>
+<<<<<<< HEAD
                         <a class="list-group-item list-group-item-action  " href="https://eclass.e.southern.edu/course/view.php?id=42401#section-13" data-key="241073" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="42401">
+=======
+                        <a class="list-group-item list-group-item-action  " href="https://eclass.e.southern.edu/course/view.php?id=42399#section-8" data-key="234554" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="42399">
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
                             <div class="ml-0">
                                 <div class="media">
                                         <span class="media-left">
                                             <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  ></i>
                                         </span>
+<<<<<<< HEAD
                                     <span class="media-body ">Week 14</span>
+=======
+                                    <span class="media-body ">Project</span>
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
                                 </div>
                             </div>
                         </a>
                     </li>
                     <li>
+<<<<<<< HEAD
                         <a class="list-group-item list-group-item-action  " href="https://eclass.e.southern.edu/course/view.php?id=42401#section-14" data-key="241074" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="42401">
+=======
+                        <a class="list-group-item list-group-item-action  " href="https://eclass.e.southern.edu/course/view.php?id=42399#section-9" data-key="239131" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="42399">
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
                             <div class="ml-0">
                                 <div class="media">
                                         <span class="media-left">
                                             <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  ></i>
                                         </span>
+<<<<<<< HEAD
                                     <span class="media-body ">Week 15</span>
+=======
+                                    <span class="media-body ">Final Exam</span>
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
                                 </div>
                             </div>
                         </a>
                     </li>
                     <li>
+<<<<<<< HEAD
                         <a class="list-group-item list-group-item-action  " href="https://eclass.e.southern.edu/course/view.php?id=42401#section-15" data-key="241075" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="42401">
+=======
+                        <a class="list-group-item list-group-item-action  " href="https://eclass.e.southern.edu/course/view.php?id=42399#section-13" data-key="239135" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="42399">
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
                             <div class="ml-0">
                                 <div class="media">
                                         <span class="media-left">
                                             <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  ></i>
                                         </span>
+<<<<<<< HEAD
                                     <span class="media-body ">Final Exam</span>
+=======
+                                    <span class="media-body ">Section 13</span>
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
                                 </div>
                             </div>
                         </a>
                     </li>
                     <li>
+<<<<<<< HEAD
                         <a class="list-group-item list-group-item-action  " href="https://eclass.e.southern.edu/local/kalturamediagallery/index.php?courseid=42401" data-key="kalturacoursegallerylink-mycourses" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="0" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="42401">
                             <div class="ml-0">
                                 <div class="media">
                                         <span class="media-left">
                                             <img class="icon " alt="" aria-hidden="true" src="https://eclass.e.southern.edu/theme/image.php/boost/local_kalturamediagallery/1612253157/media-gallery" />
+=======
+                        <a class="list-group-item list-group-item-action  " href="https://eclass.e.southern.edu/local/kalturamediagallery/index.php?courseid=42399" data-key="kalturacoursegallerylink-mycourses" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="0" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="42399">
+                            <div class="ml-0">
+                                <div class="media">
+                                        <span class="media-left">
+                                            <img class="icon " alt="" aria-hidden="true" src="https://eclass.e.southern.edu/theme/image.php/boost/local_kalturamediagallery/1613722060/media-gallery" />
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
                                         </span>
                                     <span class="media-body ">Media Gallery</span>
                                 </div>
@@ -487,7 +656,11 @@ document.body.className += ' jsenabled';
                         </a>
                     </li>
                     <li>
+<<<<<<< HEAD
                         <a class="list-group-item list-group-item-action  " href="https://eclass.e.southern.edu/calendar/view.php?view=month&amp;course=42401" data-key="calendar" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="60" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="1">
+=======
+                        <a class="list-group-item list-group-item-action  " href="https://eclass.e.southern.edu/calendar/view.php?view=month&amp;course=42399" data-key="calendar" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="60" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="1">
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
                             <div class="ml-0">
                                 <div class="media">
                                         <span class="media-left">
@@ -535,7 +708,11 @@ document.body.className += ' jsenabled';
                         </a>
                     </li>
                     <li>
+<<<<<<< HEAD
                         <a class="list-group-item list-group-item-action  " href="https://eclass.e.southern.edu/course/view.php?id=42399" data-key="42399" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses">
+=======
+                        <a class="list-group-item list-group-item-action  " href="https://eclass.e.southern.edu/course/view.php?id=42399" data-key="42399" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="1" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses">
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
                             <div class="ml-1">
                                 <div class="media">
                                         <span class="media-left">
@@ -559,7 +736,11 @@ document.body.className += ' jsenabled';
                         </a>
                     </li>
                     <li>
+<<<<<<< HEAD
                         <a class="list-group-item list-group-item-action  " href="https://eclass.e.southern.edu/course/view.php?id=42401" data-key="42401" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="1" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses">
+=======
+                        <a class="list-group-item list-group-item-action  " href="https://eclass.e.southern.edu/course/view.php?id=42401" data-key="42401" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses">
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
                             <div class="ml-1">
                                 <div class="media">
                                         <span class="media-left">
@@ -617,7 +798,11 @@ document.body.className += ' jsenabled';
             <div class="card-body ">
                 <div class="d-sm-flex align-items-center">
                     <div class="mr-auto">
+<<<<<<< HEAD
                         <div class="page-context-header"><div class="page-header-headings"><h1>W21 Network Security (CPTR-427-A)</h1></div></div>
+=======
+                        <div class="page-context-header"><div class="page-header-headings"><h1>W21 Database Management Systems (CPTR-319-A)</h1></div></div>
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
                     </div>
 
                     <div class="header-actions-container flex-shrink-0" data-region="header-actions-container">
@@ -634,6 +819,7 @@ document.body.className += ' jsenabled';
                 <li class="breadcrumb-item">My courses</li>
         
                 <li class="breadcrumb-item">
+<<<<<<< HEAD
                     <a href="https://eclass.e.southern.edu/course/view.php?id=42401"  title="W21 Network Security (CPTR-427-A)">W21 CPTR-427-A</a>
                 </li>
         
@@ -643,6 +829,17 @@ document.body.className += ' jsenabled';
         
                 <li class="breadcrumb-item">
                     <a href="https://eclass.e.southern.edu/mod/quiz/view.php?id=1034118" aria-current="page" title="Quiz">Quiz 04</a>
+=======
+                    <a href="https://eclass.e.southern.edu/course/view.php?id=42399"  title="W21 Database Management Systems (CPTR-319-A)">W21 CPTR-319-A</a>
+                </li>
+        
+                <li class="breadcrumb-item">
+                    <a href="https://eclass.e.southern.edu/course/view.php?id=42399#section-4"  >Chapter 3-5: SQL</a>
+                </li>
+        
+                <li class="breadcrumb-item">
+                    <a href="https://eclass.e.southern.edu/mod/quiz/view.php?id=1021046" aria-current="page" title="Quiz">Quiz 4</a>
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
                 </li>
         </ol>
 </nav>
@@ -664,6 +861,7 @@ document.body.className += ' jsenabled';
                 <section id="region-main" class="has-blocks mb-3" aria-label="Content">
 
                     <span class="notifications" id="user-notifications"></span>
+<<<<<<< HEAD
                     <div role="main"><span id="maincontent"></span><table class="generaltable generalbox quizreviewsummary"><tbody><tr><th class="cell" scope="row">Started on</th><td class="cell">Tuesday, February 2, 2021, 8:44 PM</td></tr><tr><th class="cell" scope="row">State</th><td class="cell">Finished</td></tr><tr><th class="cell" scope="row">Completed on</th><td class="cell">Tuesday, February 2, 2021, 8:45 PM</td></tr><tr><th class="cell" scope="row">Time taken</th><td class="cell">1 min 2 secs</td></tr><tr><th class="cell" scope="row">Grade</th><td class="cell"><b>20.00</b> out of 20.00 (<b>100</b>%)</td></tr></tbody></table><form action="https://eclass.e.southern.edu/mod/quiz/review.php?attempt=1156857&amp;cmid=1034118" method="post" class="questionflagsaveform"><div><div id="question-1224988-16" class="que truefalse deferredfeedback complete"><div class="info"><h3 class="no">Question <span class="qno">1</span></h3><div class="state">Complete</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q1224988:16_:flagged" value="0" /><input type="checkbox" id="q1224988:16_:flaggedcheckbox" name="q1224988:16_:flagged" value="1" /><input type="hidden" value="qaid=12451002&amp;qubaid=1224988&amp;qid=8072572&amp;slot=16&amp;checksum=cde2e163089a0357d56fd37fda3d7182&amp;sesskey=2j1RFvndmv&amp;newstate=" class="questionflagpostdata" /><label id="q1224988:16_:flaggedlabel" for="q1224988:16_:flaggedcheckbox"><img src="https://eclass.e.southern.edu/theme/image.php/boost/core/1612253157/i/unflagged" alt="Not flagged" class="questionflagimage" id="q1224988:16_:flaggedimg" /><span>Flag question</span></label>
 </div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q1224988:16_:sequencecheck" value="3" /><div class="qtext">The concept of least functionality is when an organization configures computers and other information systems to provide only the essential functions.</div><div class="ablock"><div class="prompt">Select one:</div><div class="answer"><div class="r0"><input type="radio" name="q1224988:16_answer" value="1" id="q1224988:16_answertrue" disabled="disabled" checked="checked" /><label for="q1224988:16_answertrue" class="ml-1">True</label> </div><div class="r1"><input type="radio" name="q1224988:16_answer" value="0" id="q1224988:16_answerfalse" disabled="disabled" /><label for="q1224988:16_answerfalse" class="ml-1">False</label> </div></div></div></div></div></div><div id="question-1224988-18" class="que truefalse deferredfeedback complete"><div class="info"><h3 class="no">Question <span class="qno">2</span></h3><div class="state">Complete</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q1224988:18_:flagged" value="0" /><input type="checkbox" id="q1224988:18_:flaggedcheckbox" name="q1224988:18_:flagged" value="1" /><input type="hidden" value="qaid=12451004&amp;qubaid=1224988&amp;qid=8072567&amp;slot=18&amp;checksum=bf8a83417d69c28f3cc9043829f682e0&amp;sesskey=2j1RFvndmv&amp;newstate=" class="questionflagpostdata" /><label id="q1224988:18_:flaggedlabel" for="q1224988:18_:flaggedcheckbox"><img src="https://eclass.e.southern.edu/theme/image.php/boost/core/1612253157/i/unflagged" alt="Not flagged" class="questionflagimage" id="q1224988:18_:flaggedimg" /><span>Flag question</span></label>
 </div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q1224988:18_:sequencecheck" value="3" /><div class="qtext">The systeminfo command displays the version number, build number, and the patch level of the operating system.</div><div class="ablock"><div class="prompt">Select one:</div><div class="answer"><div class="r0"><input type="radio" name="q1224988:18_answer" value="1" id="q1224988:18_answertrue" disabled="disabled" checked="checked" /><label for="q1224988:18_answertrue" class="ml-1">True</label> </div><div class="r1"><input type="radio" name="q1224988:18_answer" value="0" id="q1224988:18_answerfalse" disabled="disabled" /><label for="q1224988:18_answerfalse" class="ml-1">False</label> </div></div></div></div></div></div><div id="question-1224988-10" class="que multichoice deferredfeedback complete"><div class="info"><h3 class="no">Question <span class="qno">3</span></h3><div class="state">Complete</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q1224988:10_:flagged" value="0" /><input type="checkbox" id="q1224988:10_:flaggedcheckbox" name="q1224988:10_:flagged" value="1" /><input type="hidden" value="qaid=12450996&amp;qubaid=1224988&amp;qid=8072573&amp;slot=10&amp;checksum=a3639e8f2d6c8b3a0e39c6559ca0faed&amp;sesskey=2j1RFvndmv&amp;newstate=" class="questionflagpostdata" /><label id="q1224988:10_:flaggedlabel" for="q1224988:10_:flaggedcheckbox"><img src="https://eclass.e.southern.edu/theme/image.php/boost/core/1612253157/i/unflagged" alt="Not flagged" class="questionflagimage" id="q1224988:10_:flaggedimg" /><span>Flag question</span></label>
@@ -729,19 +927,66 @@ document.body.className += ' jsenabled';
 <div class="row">
     <div class="col-md-4">        <div class="float-left">
                 <a href="https://eclass.e.southern.edu/mod/assign/view.php?id=1034115&forceview=1" id="prev-activity-link" class="btn btn-link"  title="Ch03 Flashcards" >&#x25C4; Ch03 Flashcards</a>
+=======
+                    <div role="main"><span id="maincontent"></span><table class="generaltable generalbox quizreviewsummary"><tbody><tr><th class="cell" scope="row">Started on</th><td class="cell">Sunday, February 21, 2021, 7:47 PM</td></tr><tr><th class="cell" scope="row">State</th><td class="cell">Finished</td></tr><tr><th class="cell" scope="row">Completed on</th><td class="cell">Sunday, February 21, 2021, 7:48 PM</td></tr><tr><th class="cell" scope="row">Time taken</th><td class="cell">1 min 14 secs</td></tr><tr><th class="cell" scope="row">Grade</th><td class="cell"><b>18.00</b> out of 18.00 (<b>100</b>%)</td></tr></tbody></table><form action="https://eclass.e.southern.edu/mod/quiz/review.php?attempt=1172771&amp;cmid=1021046" method="post" class="questionflagsaveform"><div><div id="question-1242931-1" class="que multianswer deferredfeedback correct"><div class="info"><h3 class="no">Question <span class="qno">1</span></h3><div class="state">Correct</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q1242931:1_:flagged" value="0" /><input type="checkbox" id="q1242931:1_:flaggedcheckbox" name="q1242931:1_:flagged" value="1" /><input type="hidden" value="qaid=12666328&amp;qubaid=1242931&amp;qid=8019365&amp;slot=1&amp;checksum=5e600743baef5b489cf469c9ca53aac2&amp;sesskey=I1GNJE0yGR&amp;newstate=" class="questionflagpostdata" /><label id="q1242931:1_:flaggedlabel" for="q1242931:1_:flaggedcheckbox"><img src="https://eclass.e.southern.edu/theme/image.php/boost/core/1613722060/i/unflagged" alt="Not flagged" class="questionflagimage" id="q1242931:1_:flaggedimg" /><span>Flag question</span></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q1242931:1_:sequencecheck" value="3" /><p>Candidate keys can be identified by the <span class="subquestion form-inline d-inline"><label class="subq accesshide" for="q1242931:1_sub1_answer">Answer</label><input type="text" name="q1242931:1_sub1_answer" value="unique" id="q1242931:1_sub1_answer" size="8" class="form-control mb-1 correct" readonly="readonly" /><i class="icon fa fa-check text-success fa-fw "  title="Correct" aria-label="Correct"></i><span class="feedbackspan accesshide">Correct<br />Mark 1.00 out of 1.00</span></span> constraint.</p></div></div></div><div id="question-1242931-2" class="que multianswer deferredfeedback correct"><div class="info"><h3 class="no">Question <span class="qno">2</span></h3><div class="state">Correct</div><div class="grade">Mark 5.00 out of 5.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q1242931:2_:flagged" value="0" /><input type="checkbox" id="q1242931:2_:flaggedcheckbox" name="q1242931:2_:flagged" value="1" /><input type="hidden" value="qaid=12666329&amp;qubaid=1242931&amp;qid=8019355&amp;slot=2&amp;checksum=00cc5e8f2fb8f4755643d473ce93fa9e&amp;sesskey=I1GNJE0yGR&amp;newstate=" class="questionflagpostdata" /><label id="q1242931:2_:flaggedlabel" for="q1242931:2_:flaggedcheckbox"><img src="https://eclass.e.southern.edu/theme/image.php/boost/core/1613722060/i/unflagged" alt="Not flagged" class="questionflagimage" id="q1242931:2_:flaggedimg" /><span>Flag question</span></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q1242931:2_:sequencecheck" value="3" /><p>List the 5 constraints in alphabetical order:</p>
+<ol>
+<li>
+<pre><span class="subquestion form-inline d-inline"><label class="subq accesshide" for="q1242931:2_sub1_answer">Answer</label><input type="text" name="q1242931:2_sub1_answer" value="check" id="q1242931:2_sub1_answer" size="6" class="form-control mb-1 correct" readonly="readonly" /><i class="icon fa fa-check text-success fa-fw "  title="Correct" aria-label="Correct"></i><span class="feedbackspan accesshide">Correct<br />Mark 1.00 out of 1.00</span></span></pre>
+</li>
+<li>
+<pre><span class="subquestion form-inline d-inline"><label class="subq accesshide" for="q1242931:2_sub2_answer">Answer</label><input type="text" name="q1242931:2_sub2_answer" value="foreign key" id="q1242931:2_sub2_answer" size="13" class="form-control mb-1 correct" readonly="readonly" /><i class="icon fa fa-check text-success fa-fw "  title="Correct" aria-label="Correct"></i><span class="feedbackspan accesshide">Correct<br />Mark 1.00 out of 1.00</span></span></pre>
+</li>
+<li>
+<pre><span class="subquestion form-inline d-inline"><label class="subq accesshide" for="q1242931:2_sub3_answer">Answer</label><input type="text" name="q1242931:2_sub3_answer" value="not null" id="q1242931:2_sub3_answer" size="10" class="form-control mb-1 correct" readonly="readonly" /><i class="icon fa fa-check text-success fa-fw "  title="Correct" aria-label="Correct"></i><span class="feedbackspan accesshide">Correct<br />Mark 1.00 out of 1.00</span></span></pre>
+</li>
+<li>
+<pre><span class="subquestion form-inline d-inline"><label class="subq accesshide" for="q1242931:2_sub4_answer">Answer</label><input type="text" name="q1242931:2_sub4_answer" value="primary key" id="q1242931:2_sub4_answer" size="12" class="form-control mb-1 correct" readonly="readonly" /><i class="icon fa fa-check text-success fa-fw "  title="Correct" aria-label="Correct"></i><span class="feedbackspan accesshide">Correct<br />Mark 1.00 out of 1.00</span></span></pre>
+</li>
+<li>
+<pre><span class="subquestion form-inline d-inline"><label class="subq accesshide" for="q1242931:2_sub5_answer">Answer</label><input type="text" name="q1242931:2_sub5_answer" value="unique" id="q1242931:2_sub5_answer" size="8" class="form-control mb-1 correct" readonly="readonly" /><i class="icon fa fa-check text-success fa-fw "  title="Correct" aria-label="Correct"></i><span class="feedbackspan accesshide">Correct<br />Mark 1.00 out of 1.00</span></span></pre>
+</li>
+</ol></div></div></div><div id="question-1242931-3" class="que multianswer deferredfeedback correct"><div class="info"><h3 class="no">Question <span class="qno">3</span></h3><div class="state">Correct</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q1242931:3_:flagged" value="0" /><input type="checkbox" id="q1242931:3_:flaggedcheckbox" name="q1242931:3_:flagged" value="1" /><input type="hidden" value="qaid=12666330&amp;qubaid=1242931&amp;qid=8019363&amp;slot=3&amp;checksum=5bc8ce30cf8166b52419764facae0d66&amp;sesskey=I1GNJE0yGR&amp;newstate=" class="questionflagpostdata" /><label id="q1242931:3_:flaggedlabel" for="q1242931:3_:flaggedcheckbox"><img src="https://eclass.e.southern.edu/theme/image.php/boost/core/1613722060/i/unflagged" alt="Not flagged" class="questionflagimage" id="q1242931:3_:flaggedimg" /><span>Flag question</span></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q1242931:3_:sequencecheck" value="3" /><p>Referential integrity is created by the <span class="subquestion form-inline d-inline"><label class="subq accesshide" for="q1242931:3_sub1_answer">Answer</label><input type="text" name="q1242931:3_sub1_answer" value="foreign key" id="q1242931:3_sub1_answer" size="12" class="form-control mb-1 correct" readonly="readonly" /><i class="icon fa fa-check text-success fa-fw "  title="Correct" aria-label="Correct"></i><span class="feedbackspan accesshide">Correct<br />Mark 1.00 out of 1.00</span></span> constraint.</p></div></div></div><div id="question-1242931-4" class="que multianswer deferredfeedback correct"><div class="info"><h3 class="no">Question <span class="qno">4</span></h3><div class="state">Correct</div><div class="grade">Mark 4.00 out of 4.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q1242931:4_:flagged" value="0" /><input type="checkbox" id="q1242931:4_:flaggedcheckbox" name="q1242931:4_:flagged" value="1" /><input type="hidden" value="qaid=12666331&amp;qubaid=1242931&amp;qid=8019347&amp;slot=4&amp;checksum=b0a4d78ec8392689dfe09447c3f19483&amp;sesskey=I1GNJE0yGR&amp;newstate=" class="questionflagpostdata" /><label id="q1242931:4_:flaggedlabel" for="q1242931:4_:flaggedcheckbox"><img src="https://eclass.e.southern.edu/theme/image.php/boost/core/1613722060/i/unflagged" alt="Not flagged" class="questionflagimage" id="q1242931:4_:flaggedimg" /><span>Flag question</span></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q1242931:4_:sequencecheck" value="3" /><p>A transaction is started in SQLite by the words <span class="subquestion form-inline d-inline"><label class="subq accesshide" for="q1242931:4_sub1_answer">Answer</label><input type="text" name="q1242931:4_sub1_answer" value="begin" id="q1242931:4_sub1_answer" size="6" class="form-control mb-1 correct" readonly="readonly" /><i class="icon fa fa-check text-success fa-fw "  title="Correct" aria-label="Correct"></i><span class="feedbackspan accesshide">Correct<br />Mark 1.00 out of 1.00</span></span> <span class="subquestion form-inline d-inline"><label class="subq accesshide" for="q1242931:4_sub2_answer">Answer</label><input type="text" name="q1242931:4_sub2_answer" value="transaction;" id="q1242931:4_sub2_answer" size="13" class="form-control mb-1 correct" readonly="readonly" /><i class="icon fa fa-check text-success fa-fw "  title="Correct" aria-label="Correct"></i><span class="feedbackspan accesshide">Correct<br />Mark 1.00 out of 1.00</span></span> and ended by either <span class="subquestion form-inline d-inline"><label class="subq accesshide" for="q1242931:4_sub3_answer">Answer</label><input type="text" name="q1242931:4_sub3_answer" value="commit;" id="q1242931:4_sub3_answer" size="8" class="form-control mb-1 correct" readonly="readonly" /><i class="icon fa fa-check text-success fa-fw "  title="Correct" aria-label="Correct"></i><span class="feedbackspan accesshide">Correct<br />Mark 1.00 out of 1.00</span></span> when saving the results or <span class="subquestion form-inline d-inline"><label class="subq accesshide" for="q1242931:4_sub4_answer">Answer</label><input type="text" name="q1242931:4_sub4_answer" value="rollback;" id="q1242931:4_sub4_answer" size="10" class="form-control mb-1 correct" readonly="readonly" /><i class="icon fa fa-check text-success fa-fw "  title="Correct" aria-label="Correct"></i><span class="feedbackspan accesshide">Correct<br />Mark 1.00 out of 1.00</span></span> when undoing the results.</p></div></div></div><div id="question-1242931-5" class="que truefalse deferredfeedback correct"><div class="info"><h3 class="no">Question <span class="qno">5</span></h3><div class="state">Correct</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q1242931:5_:flagged" value="0" /><input type="checkbox" id="q1242931:5_:flaggedcheckbox" name="q1242931:5_:flagged" value="1" /><input type="hidden" value="qaid=12666332&amp;qubaid=1242931&amp;qid=8019367&amp;slot=5&amp;checksum=53c063d33a22758caccd8662e97d292f&amp;sesskey=I1GNJE0yGR&amp;newstate=" class="questionflagpostdata" /><label id="q1242931:5_:flaggedlabel" for="q1242931:5_:flaggedcheckbox"><img src="https://eclass.e.southern.edu/theme/image.php/boost/core/1613722060/i/unflagged" alt="Not flagged" class="questionflagimage" id="q1242931:5_:flaggedimg" /><span>Flag question</span></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q1242931:5_:sequencecheck" value="3" /><div class="qtext"><p>Even if we don't specify if deletes should be cascaded, it will default to that behavior.</p></div><div class="ablock"><div class="prompt">Select one:</div><div class="answer"><div class="r0"><input type="radio" name="q1242931:5_answer" value="1" id="q1242931:5_answertrue" disabled="disabled" /><label for="q1242931:5_answertrue" class="ml-1">True</label> </div><div class="r1 correct"><input type="radio" name="q1242931:5_answer" value="0" id="q1242931:5_answerfalse" disabled="disabled" checked="checked" /><label for="q1242931:5_answerfalse" class="ml-1">False</label> <i class="icon fa fa-check text-success fa-fw "  title="Correct" aria-label="Correct"></i></div></div></div></div></div></div><div id="question-1242931-6" class="que truefalse deferredfeedback correct"><div class="info"><h3 class="no">Question <span class="qno">6</span></h3><div class="state">Correct</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q1242931:6_:flagged" value="0" /><input type="checkbox" id="q1242931:6_:flaggedcheckbox" name="q1242931:6_:flagged" value="1" /><input type="hidden" value="qaid=12666333&amp;qubaid=1242931&amp;qid=8019342&amp;slot=6&amp;checksum=f615f9dabe9a6dcdda6d280020ad0202&amp;sesskey=I1GNJE0yGR&amp;newstate=" class="questionflagpostdata" /><label id="q1242931:6_:flaggedlabel" for="q1242931:6_:flaggedcheckbox"><img src="https://eclass.e.southern.edu/theme/image.php/boost/core/1613722060/i/unflagged" alt="Not flagged" class="questionflagimage" id="q1242931:6_:flaggedimg" /><span>Flag question</span></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q1242931:6_:sequencecheck" value="3" /><div class="qtext"><p>Read the description of a key join <a href="http://infocenter.sybase.com/help/index.jsp?topic=/com.sybase.infocenter.dc38159.1530/doc/html/san1281545629928.html">here.</a></p>
+<p>This is essentially what a <strong>natural join should be</strong>. Whenever you are joining tables together remember this! Unless you are doing something really odd, you will <em>always</em> join two tables on the foreign keys used to relate the two tables together.</p></div><div class="ablock"><div class="prompt">Select one:</div><div class="answer"><div class="r0 correct"><input type="radio" name="q1242931:6_answer" value="1" id="q1242931:6_answertrue" disabled="disabled" checked="checked" /><label for="q1242931:6_answertrue" class="ml-1">True</label> <i class="icon fa fa-check text-success fa-fw "  title="Correct" aria-label="Correct"></i></div><div class="r1"><input type="radio" name="q1242931:6_answer" value="0" id="q1242931:6_answerfalse" disabled="disabled" /><label for="q1242931:6_answerfalse" class="ml-1">False</label> </div></div></div></div></div></div><div id="question-1242931-7" class="que truefalse deferredfeedback correct"><div class="info"><h3 class="no">Question <span class="qno">7</span></h3><div class="state">Correct</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q1242931:7_:flagged" value="0" /><input type="checkbox" id="q1242931:7_:flaggedcheckbox" name="q1242931:7_:flagged" value="1" /><input type="hidden" value="qaid=12666334&amp;qubaid=1242931&amp;qid=8019336&amp;slot=7&amp;checksum=a751fd303a59c3bc0ccea6d14c794d07&amp;sesskey=I1GNJE0yGR&amp;newstate=" class="questionflagpostdata" /><label id="q1242931:7_:flaggedlabel" for="q1242931:7_:flaggedcheckbox"><img src="https://eclass.e.southern.edu/theme/image.php/boost/core/1613722060/i/unflagged" alt="Not flagged" class="questionflagimage" id="q1242931:7_:flaggedimg" /><span>Flag question</span></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q1242931:7_:sequencecheck" value="3" /><div class="qtext"><p>Given the query:</p>
+<p>SELECT *<br />FROM instructor NATURAL JOIN takes</p>
+<p>This statement will not perform a natural join because ID means different things in these tables.</p></div><div class="ablock"><div class="prompt">Select one:</div><div class="answer"><div class="r0"><input type="radio" name="q1242931:7_answer" value="1" id="q1242931:7_answertrue" disabled="disabled" /><label for="q1242931:7_answertrue" class="ml-1">True</label> </div><div class="r1 correct"><input type="radio" name="q1242931:7_answer" value="0" id="q1242931:7_answerfalse" disabled="disabled" checked="checked" /><label for="q1242931:7_answerfalse" class="ml-1">False</label> <i class="icon fa fa-check text-success fa-fw "  title="Correct" aria-label="Correct"></i></div></div></div></div></div></div><div id="question-1242931-8" class="que truefalse deferredfeedback correct"><div class="info"><h3 class="no">Question <span class="qno">8</span></h3><div class="state">Correct</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q1242931:8_:flagged" value="0" /><input type="checkbox" id="q1242931:8_:flaggedcheckbox" name="q1242931:8_:flagged" value="1" /><input type="hidden" value="qaid=12666335&amp;qubaid=1242931&amp;qid=8019328&amp;slot=8&amp;checksum=fde746880c32b1ed9448e838f77dcd65&amp;sesskey=I1GNJE0yGR&amp;newstate=" class="questionflagpostdata" /><label id="q1242931:8_:flaggedlabel" for="q1242931:8_:flaggedcheckbox"><img src="https://eclass.e.southern.edu/theme/image.php/boost/core/1613722060/i/unflagged" alt="Not flagged" class="questionflagimage" id="q1242931:8_:flaggedimg" /><span>Flag question</span></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q1242931:8_:sequencecheck" value="3" /><div class="qtext"><p>You may use natural joins as part of your homework.</p></div><div class="ablock"><div class="prompt">Select one:</div><div class="answer"><div class="r0"><input type="radio" name="q1242931:8_answer" value="1" id="q1242931:8_answertrue" disabled="disabled" /><label for="q1242931:8_answertrue" class="ml-1">True</label> </div><div class="r1 correct"><input type="radio" name="q1242931:8_answer" value="0" id="q1242931:8_answerfalse" disabled="disabled" checked="checked" /><label for="q1242931:8_answerfalse" class="ml-1">False</label> <i class="icon fa fa-check text-success fa-fw "  title="Correct" aria-label="Correct"></i></div></div></div></div></div></div><div id="question-1242931-9" class="que truefalse deferredfeedback correct"><div class="info"><h3 class="no">Question <span class="qno">9</span></h3><div class="state">Correct</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q1242931:9_:flagged" value="0" /><input type="checkbox" id="q1242931:9_:flaggedcheckbox" name="q1242931:9_:flagged" value="1" /><input type="hidden" value="qaid=12666336&amp;qubaid=1242931&amp;qid=8019334&amp;slot=9&amp;checksum=264ea76e2d58ea5badfda58328e4e4eb&amp;sesskey=I1GNJE0yGR&amp;newstate=" class="questionflagpostdata" /><label id="q1242931:9_:flaggedlabel" for="q1242931:9_:flaggedcheckbox"><img src="https://eclass.e.southern.edu/theme/image.php/boost/core/1613722060/i/unflagged" alt="Not flagged" class="questionflagimage" id="q1242931:9_:flaggedimg" /><span>Flag question</span></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q1242931:9_:sequencecheck" value="3" /><div class="qtext"><p>Given the following query:</p>
+<p>SELECT s.id, a.i_id<br />FROM student s LEFT OUTER JOIN advisor a ON s.id=a.s_id</p>
+<p>It will return all students and blank values for i_id when a student doesn't have an advisor.</p></div><div class="ablock"><div class="prompt">Select one:</div><div class="answer"><div class="r0"><input type="radio" name="q1242931:9_answer" value="1" id="q1242931:9_answertrue" disabled="disabled" /><label for="q1242931:9_answertrue" class="ml-1">True</label> </div><div class="r1 correct"><input type="radio" name="q1242931:9_answer" value="0" id="q1242931:9_answerfalse" disabled="disabled" checked="checked" /><label for="q1242931:9_answerfalse" class="ml-1">False</label> <i class="icon fa fa-check text-success fa-fw "  title="Correct" aria-label="Correct"></i></div></div></div></div></div></div><div id="question-1242931-10" class="que truefalse deferredfeedback correct"><div class="info"><h3 class="no">Question <span class="qno">10</span></h3><div class="state">Correct</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q1242931:10_:flagged" value="0" /><input type="checkbox" id="q1242931:10_:flaggedcheckbox" name="q1242931:10_:flagged" value="1" /><input type="hidden" value="qaid=12666337&amp;qubaid=1242931&amp;qid=8019324&amp;slot=10&amp;checksum=d42dfdffa5f1f5fff756620ea65a6b43&amp;sesskey=I1GNJE0yGR&amp;newstate=" class="questionflagpostdata" /><label id="q1242931:10_:flaggedlabel" for="q1242931:10_:flaggedcheckbox"><img src="https://eclass.e.southern.edu/theme/image.php/boost/core/1613722060/i/unflagged" alt="Not flagged" class="questionflagimage" id="q1242931:10_:flaggedimg" /><span>Flag question</span></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q1242931:10_:sequencecheck" value="3" /><div class="qtext"><p>Suppose user A, who has all authorizations on a relation r, grants select on relation r to public with grant option. Suppose that user B then grants select on r to A. Then causes a cycle in the authorization graph.</p></div><div class="ablock"><div class="prompt">Select one:</div><div class="answer"><div class="r0 correct"><input type="radio" name="q1242931:10_answer" value="1" id="q1242931:10_answertrue" disabled="disabled" checked="checked" /><label for="q1242931:10_answertrue" class="ml-1">True</label> <i class="icon fa fa-check text-success fa-fw "  title="Correct" aria-label="Correct"></i></div><div class="r1"><input type="radio" name="q1242931:10_answer" value="0" id="q1242931:10_answerfalse" disabled="disabled" /><label for="q1242931:10_answerfalse" class="ml-1">False</label> </div></div></div></div></div></div><div id="question-1242931-11" class="que truefalse deferredfeedback correct"><div class="info"><h3 class="no">Question <span class="qno">11</span></h3><div class="state">Correct</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q1242931:11_:flagged" value="0" /><input type="checkbox" id="q1242931:11_:flaggedcheckbox" name="q1242931:11_:flagged" value="1" /><input type="hidden" value="qaid=12666338&amp;qubaid=1242931&amp;qid=8019325&amp;slot=11&amp;checksum=f527fce039c6ad2e95682e260edb82cf&amp;sesskey=I1GNJE0yGR&amp;newstate=" class="questionflagpostdata" /><label id="q1242931:11_:flaggedlabel" for="q1242931:11_:flaggedcheckbox"><img src="https://eclass.e.southern.edu/theme/image.php/boost/core/1613722060/i/unflagged" alt="Not flagged" class="questionflagimage" id="q1242931:11_:flaggedimg" /><span>Flag question</span></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q1242931:11_:sequencecheck" value="3" /><div class="qtext"><p>Suppose user A, who has all authorizations on a relation r, grants select on relation r to B with grant option. Suppose that user B then grants select on r to A. This will cause the traversal of the authorization graph to loop indefinitely? </p>
+<p></p></div><div class="ablock"><div class="prompt">Select one:</div><div class="answer"><div class="r0"><input type="radio" name="q1242931:11_answer" value="1" id="q1242931:11_answertrue" disabled="disabled" /><label for="q1242931:11_answertrue" class="ml-1">True</label> </div><div class="r1 correct"><input type="radio" name="q1242931:11_answer" value="0" id="q1242931:11_answerfalse" disabled="disabled" checked="checked" /><label for="q1242931:11_answerfalse" class="ml-1">False</label> <i class="icon fa fa-check text-success fa-fw "  title="Correct" aria-label="Correct"></i></div></div></div></div></div></div><input type="hidden" name="sesskey" value="I1GNJE0yGR" /><div class="submitbtns"><input type="submit" class="questionflagsavebutton btn btn-secondary" name="savingflags" value="Save the state of the flags" /></div></div></form><div class="submitbtns"><a class="mod_quiz-next-nav" href="https://eclass.e.southern.edu/mod/quiz/view.php?id=1021046">Finish review</a></div></div>
+                    <div class="mt-5 mb-1 activity-navigation container-fluid">
+<div class="row">
+    <div class="col-md-4">        <div class="float-left">
+                <a href="https://eclass.e.southern.edu/mod/quiz/view.php?id=1014208&forceview=1" id="prev-activity-link" class="btn btn-link"  title="Quiz 3" >&#x25C4; Quiz 3</a>
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
 
         </div>
 </div>
     <div class="col-md-4">        <div class="mdl-align">
             <div class="urlselect">
+<<<<<<< HEAD
     <form method="post" action="https://eclass.e.southern.edu/course/jumpto.php" class="form-inline" id="url_select_f601a0046896e014">
         <input type="hidden" name="sesskey" value="2j1RFvndmv">
+=======
+    <form method="post" action="https://eclass.e.southern.edu/course/jumpto.php" class="form-inline" id="url_select_f6032ff4f598e914">
+        <input type="hidden" name="sesskey" value="I1GNJE0yGR">
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
             <label for="jump-to-activity" class="sr-only">
                 Jump to...
             </label>
         <select  id="jump-to-activity" class="custom-select urlselect" name="jump"
                  >
                     <option value="" selected>Jump to...</option>
+<<<<<<< HEAD
                     <option value="/mod/forum/view.php?id=1034096&amp;forceview=1" >Announcements</option>
                     <option value="/mod/url/view.php?id=1034097&amp;forceview=1" >Syllabus</option>
                     <option value="/mod/url/view.php?id=1034098&amp;forceview=1" >Schedule</option>
@@ -805,6 +1050,99 @@ document.body.className += ' jsenabled';
                     <option value="/mod/assign/view.php?id=1034162&amp;forceview=1" >Lab 10</option>
                     <option value="/mod/assign/view.php?id=1034163&amp;forceview=1" >Final Exam</option>
                     <option value="/mod/questionnaire/view.php?id=1034164&amp;forceview=1" >Extra credit</option>
+=======
+                    <option value="/mod/forum/view.php?id=1014123&amp;forceview=1" >Announcements</option>
+                    <option value="/mod/url/view.php?id=1014125&amp;forceview=1" >Dr. A's Virtual Classroom/Office (NEW)</option>
+                    <option value="/mod/url/view.php?id=1014126&amp;forceview=1" >Getting Started With Zoom (NEW)</option>
+                    <option value="/mod/url/view.php?id=1014128&amp;forceview=1" >Dr. A's Website</option>
+                    <option value="/mod/url/view.php?id=1014129&amp;forceview=1" >Syllabus</option>
+                    <option value="/mod/resource/view.php?id=1060628&amp;forceview=1" >CPTR 319 schedule 2021 - updated 2021-01-31</option>
+                    <option value="/mod/url/view.php?id=1014130&amp;forceview=1" >Book website and resources</option>
+                    <option value="/mod/resource/view.php?id=1014136&amp;forceview=1" >Example Database Diagram for University Schema</option>
+                    <option value="/mod/folder/view.php?id=1014137&amp;forceview=1" >SQLite Databases</option>
+                    <option value="/mod/folder/view.php?id=1020366&amp;forceview=1" >SQL Server Scripts (optional)</option>
+                    <option value="/mod/resource/view.php?id=1014146&amp;forceview=1" >Lecture 14 Chapter 5 Triggers</option>
+                    <option value="/mod/resource/view.php?id=1014148&amp;forceview=1" >Lecture 15 Chapter 5 - Recursion</option>
+                    <option value="/mod/resource/view.php?id=1014149&amp;forceview=1" >Chapter 5 CUBE ROLLUP Examples.sql</option>
+                    <option value="/mod/resource/view.php?id=1014150&amp;forceview=1" >Aircraft SQL Create table and insert Data.sql</option>
+                    <option value="/mod/resource/view.php?id=1014151&amp;forceview=1" >Optional - Cross tab example in Excel using Aircraft Data</option>
+                    <option value="/mod/resource/view.php?id=1052405&amp;forceview=1" >Lecture 01 - Ch 01</option>
+                    <option value="/mod/quiz/view.php?id=1014165&amp;forceview=1" >Quiz 1</option>
+                    <option value="/mod/resource/view.php?id=1014167&amp;forceview=1" >Chapter 2 Notes</option>
+                    <option value="/mod/resource/view.php?id=1014170&amp;forceview=1" >The Relational Algebra Cheat Sheet for MS Word</option>
+                    <option value="/mod/resource/view.php?id=1014171&amp;forceview=1" >Example Database Diagram for University Schema</option>
+                    <option value="/mod/resource/view.php?id=1014174&amp;forceview=1" >Relational Algebra Basic Operations Worksheet - 2014</option>
+                    <option value="/mod/url/view.php?id=1014175&amp;forceview=1" >Video - Introduction to Relational Algebra</option>
+                    <option value="/mod/resource/view.php?id=1014176&amp;forceview=1" >Chapter 1-2 Review</option>
+                    <option value="/mod/quiz/view.php?id=1014178&amp;forceview=1" >Quiz 2</option>
+                    <option value="/mod/quiz/view.php?id=1019884&amp;forceview=1" >HW02</option>
+                    <option value="/mod/quiz/view.php?id=1063073&amp;forceview=1" >Chapter 1-2 Test</option>
+                    <option value="/mod/resource/view.php?id=1014182&amp;forceview=1" >Chapter 02 Homework Template</option>
+                    <option value="/mod/resource/view.php?id=1014185&amp;forceview=1" >Lecture 06-07 Chapter 3</option>
+                    <option value="/mod/url/view.php?id=1014186&amp;forceview=1" >Video answer of the sample questions in the Chapter 3 Lecture Notes - see slide 37</option>
+                    <option value="/mod/url/view.php?id=1014187&amp;forceview=1" >Natural Join with Oracle - Why Not? This is why not.</option>
+                    <option value="/mod/resource/view.php?id=1014188&amp;forceview=1" >Chapter 1-3 Review</option>
+                    <option value="/mod/url/view.php?id=1014190&amp;forceview=1" >Wednesday 2019-01-30 Lecture: Join Syntax</option>
+                    <option value="/mod/resource/view.php?id=1014191&amp;forceview=1" >Chapter 4 Slides</option>
+                    <option value="/mod/url/view.php?id=1014192&amp;forceview=1" >2019-02-01 Chapter 04 Video Lecture</option>
+                    <option value="/mod/url/view.php?id=1014193&amp;forceview=1" >Chapter 04 Last Lecture</option>
+                    <option value="/mod/resource/view.php?id=1014194&amp;forceview=1" >Last Lecture - Additional Examples</option>
+                    <option value="/mod/resource/view.php?id=1014196&amp;forceview=1" >Entity Framework Query Examples</option>
+                    <option value="/mod/resource/view.php?id=1014197&amp;forceview=1" >Program</option>
+                    <option value="/mod/url/view.php?id=1014198&amp;forceview=1" >Console Entity Framework Examples</option>
+                    <option value="/mod/page/view.php?id=1014200&amp;forceview=1" >Lecture 13 Chapter 5 Function and Procedure Examples</option>
+                    <option value="/mod/resource/view.php?id=1014201&amp;forceview=1" >Lecture 14 Chapter 5 - Triggers</option>
+                    <option value="/mod/resource/view.php?id=1014202&amp;forceview=1" >Lecture 14 Chapter 5 Triggers</option>
+                    <option value="/mod/resource/view.php?id=1014203&amp;forceview=1" >Lecture 15 Chapter 5 - Recursive Queries and OLAP</option>
+                    <option value="/mod/resource/view.php?id=1014204&amp;forceview=1" >Lecture 15 Chapter 5 - Recursion</option>
+                    <option value="/mod/page/view.php?id=1014205&amp;forceview=1" >Exercise 5.18 Hint</option>
+                    <option value="/mod/page/view.php?id=1014206&amp;forceview=1" >Exercise 5.25 Hints</option>
+                    <option value="/mod/quiz/view.php?id=1014208&amp;forceview=1" >Quiz 3</option>
+                    <option value="/mod/quiz/view.php?id=1024566&amp;forceview=1" >Quiz 05</option>
+                    <option value="/mod/resource/view.php?id=1061221&amp;forceview=1" >Chapter 03 Homework GS Directions 2021 - updated 2/2/21</option>
+                    <option value="/mod/resource/view.php?id=1061264&amp;forceview=1" >Chapter 04 Homework GS Directions 2021</option>
+                    <option value="/mod/resource/view.php?id=1061265&amp;forceview=1" >Chapter 05 Homework GS Directions 2021</option>
+                    <option value="/mod/resource/view.php?id=1014210&amp;forceview=1" >Chapter 3-5 Exam Review</option>
+                    <option value="/mod/resource/view.php?id=1014214&amp;forceview=1" >Chapter 05 Homework Template</option>
+                    <option value="/mod/url/view.php?id=1066917&amp;forceview=1" >SQL Server on Docker</option>
+                    <option value="/mod/resource/view.php?id=1014221&amp;forceview=1" >Lecture 16 Chapter 7 ER diagrams and Terms - through 26</option>
+                    <option value="/mod/resource/view.php?id=1014222&amp;forceview=1" >Lecture 16 Chapter 7 ER diagrams - Modified Chen - i.e. Book type</option>
+                    <option value="/mod/url/view.php?id=1014223&amp;forceview=1" >Lecture 17 - Make sure to download register for Vertabelo online with your sau email - free account. </option>
+                    <option value="/mod/resource/view.php?id=1014224&amp;forceview=1" >Class Residence Example 2019-2019-02-20</option>
+                    <option value="/mod/resource/view.php?id=1014225&amp;forceview=1" >Pet Hospital Class Example-2019-02-22</option>
+                    <option value="/mod/resource/view.php?id=1014226&amp;forceview=1" >Lecture 18 - Weak Entity Sets and Converting the ER to Relational Model</option>
+                    <option value="/mod/resource/view.php?id=1014229&amp;forceview=1" >bible</option>
+                    <option value="/mod/resource/view.php?id=1014230&amp;forceview=1" >BibleBeliefsWPFEF</option>
+                    <option value="/mod/resource/view.php?id=1014231&amp;forceview=1" >Chapter 7 Review Notes</option>
+                    <option value="/mod/quiz/view.php?id=1014233&amp;forceview=1" >Quiz 7</option>
+                    <option value="/mod/url/view.php?id=1014234&amp;forceview=1" >Hint: How to attack questions like 7.1</option>
+                    <option value="/mod/resource/view.php?id=1014236&amp;forceview=1" >Chapter 07 Homework Template</option>
+                    <option value="/mod/resource/view.php?id=1014238&amp;forceview=1" >Chapter 8 Functional Dependencies and Normal Forms 1-4 (New 4-9-2020)</option>
+                    <option value="/mod/url/view.php?id=1014239&amp;forceview=1" >Lecture for Monday 3/30/2020 (NEW)</option>
+                    <option value="/mod/url/view.php?id=1014240&amp;forceview=1" >Lecture Wedensday 4/1/2020 (NEW)</option>
+                    <option value="/mod/quiz/view.php?id=1014247&amp;forceview=1" >Quiz 8</option>
+                    <option value="/mod/resource/view.php?id=1014248&amp;forceview=1" >Quiz 8 LaTeX Rendered in case Moodle isn't working right</option>
+                    <option value="/mod/resource/view.php?id=1014249&amp;forceview=1" >Chapter 8 Review Exercise 2020-04-10</option>
+                    <option value="/mod/resource/view.php?id=1014258&amp;forceview=1" >Lecture 23 SLG Normalization Exercise</option>
+                    <option value="/mod/resource/view.php?id=1014260&amp;forceview=1" >Chapter 08 Homework Template</option>
+                    <option value="/mod/assign/view.php?id=1014262&amp;forceview=1" >Chapter 7-8 Exam</option>
+                    <option value="/mod/resource/view.php?id=1014263&amp;forceview=1" >Chapter 7 and 8 Exam 2020</option>
+                    <option value="/mod/resource/view.php?id=1014270&amp;forceview=1" >Lecture 27-28 - Chapter 20 Decision Trees</option>
+                    <option value="/mod/resource/view.php?id=1014265&amp;forceview=1" >Lecture 27-28 Starting 20.8</option>
+                    <option value="/mod/resource/view.php?id=1014266&amp;forceview=1" >Chapter 20 Exercise 8 Data file to use with program.</option>
+                    <option value="/mod/url/view.php?id=1014267&amp;forceview=1" >Chapter 20.8 Problem - getting started video</option>
+                    <option value="/mod/resource/view.php?id=1031289&amp;forceview=1" >Chapter 20 Homework Directions 2020</option>
+                    <option value="/mod/resource/view.php?id=1031288&amp;forceview=1" >Skeleton Code for HW20</option>
+                    <option value="/mod/resource/view.php?id=1014153&amp;forceview=1" >Proposal Template for CPTR 319</option>
+                    <option value="/mod/url/view.php?id=1014155&amp;forceview=1" >Video: ASP.NET MVC with Entity Framework</option>
+                    <option value="/mod/url/view.php?id=1014156&amp;forceview=1" >Entity Framework - ASPNET Core  Razer Pages on Macintosh (NEW)</option>
+                    <option value="/mod/assign/view.php?id=1014158&amp;forceview=1" >Project Proposal</option>
+                    <option value="/mod/assign/view.php?id=1014159&amp;forceview=1" >Project Deliverables</option>
+                    <option value="/mod/page/view.php?id=1014160&amp;forceview=1" >Project Schedule</option>
+                    <option value="/mod/quiz/view.php?id=1014272&amp;forceview=1" >Review Quiz</option>
+                    <option value="/mod/quiz/view.php?id=1014273&amp;forceview=1" >Final Exam</option>
+                    <option value="/mod/questionnaire/view.php?id=1014274&amp;forceview=1" >Extra Credit Questionaire</option>
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
         </select>
             <noscript>
                 <input type="submit" class="btn btn-secondary ml-1" value="Go">
@@ -815,7 +1153,11 @@ document.body.className += ' jsenabled';
         </div>
 </div>
     <div class="col-md-4">        <div class="float-right">
+<<<<<<< HEAD
                 <a href="https://eclass.e.southern.edu/mod/assign/view.php?id=1034119&forceview=1" id="next-activity-link" class="btn btn-link"  title="Ch04 Flashcards" >Ch04 Flashcards &#x25BA;</a>
+=======
+                <a href="https://eclass.e.southern.edu/mod/quiz/view.php?id=1024566&forceview=1" id="next-activity-link" class="btn btn-link"  title="Quiz 05" >Quiz 05 &#x25BA;</a>
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
 
         </div>
 </div>
@@ -831,16 +1173,28 @@ document.body.className += ' jsenabled';
      class=" block block_fake  card mb-3"
      role="navigation"
      data-block="_fake"
+<<<<<<< HEAD
           aria-labelledby="instance-fakeid-601a00468cb62-header"
+=======
+          aria-labelledby="instance-fakeid-6032ff4f5bfeb-header"
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
      >
 
     <div class="card-body p-3">
 
+<<<<<<< HEAD
             <h5 id="instance-fakeid-601a00468cb62-header" class="card-title d-inline"><span id="mod_quiz_navblock_title">Quiz navigation</span></h5>
 
 
         <div class="card-text content mt-3">
             <div class="qn_buttons clearfix allquestionsononepage"><a class="qnbutton complete free btn thispage" id="quiznavbutton16" title="Complete" data-quiz-page="0" href="#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>1<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton complete free btn thispage" id="quiznavbutton18" title="Complete" data-quiz-page="0" href="#question-1224988-18"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>2<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton complete free btn thispage" id="quiznavbutton10" title="Complete" data-quiz-page="0" href="#question-1224988-10"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>3<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton complete free btn thispage" id="quiznavbutton19" title="Complete" data-quiz-page="0" href="#question-1224988-19"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>4<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton complete free btn thispage" id="quiznavbutton8" title="Complete" data-quiz-page="0" href="#question-1224988-8"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>5<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton complete free btn thispage" id="quiznavbutton7" title="Complete" data-quiz-page="0" href="#question-1224988-7"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>6<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton complete free btn thispage" id="quiznavbutton2" title="Complete" data-quiz-page="0" href="#question-1224988-2"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>7<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton complete free btn thispage" id="quiznavbutton6" title="Complete" data-quiz-page="0" href="#question-1224988-6"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>8<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton complete free btn thispage" id="quiznavbutton11" title="Complete" data-quiz-page="0" href="#question-1224988-11"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>9<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton complete free btn thispage" id="quiznavbutton15" title="Complete" data-quiz-page="0" href="#question-1224988-15"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>10<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton complete free btn thispage" id="quiznavbutton12" title="Complete" data-quiz-page="0" href="#question-1224988-12"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>11<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton complete free btn thispage" id="quiznavbutton17" title="Complete" data-quiz-page="0" href="#question-1224988-17"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>12<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton complete free btn thispage" id="quiznavbutton1" title="Complete" data-quiz-page="0" href="#question-1224988-1"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>13<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton complete free btn thispage" id="quiznavbutton4" title="Complete" data-quiz-page="0" href="#question-1224988-4"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>14<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton complete free btn thispage" id="quiznavbutton20" title="Complete" data-quiz-page="0" href="#question-1224988-20"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>15<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton complete free btn thispage" id="quiznavbutton13" title="Complete" data-quiz-page="0" href="#question-1224988-13"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>16<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton complete free btn thispage" id="quiznavbutton3" title="Complete" data-quiz-page="0" href="#question-1224988-3"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>17<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton complete free btn thispage" id="quiznavbutton9" title="Complete" data-quiz-page="0" href="#question-1224988-9"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>18<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton complete free btn thispage" id="quiznavbutton5" title="Complete" data-quiz-page="0" href="#question-1224988-5"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>19<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton complete free btn thispage" id="quiznavbutton14" title="Complete" data-quiz-page="0" href="#question-1224988-14"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>20<span class="accesshide"> This page <span class="flagstate"></span></span></a></div><div class="othernav"><a class="mod_quiz-next-nav" href="https://eclass.e.southern.edu/mod/quiz/view.php?id=1034118">Finish review</a></div>
+=======
+            <h5 id="instance-fakeid-6032ff4f5bfeb-header" class="card-title d-inline"><span id="mod_quiz_navblock_title">Quiz navigation</span></h5>
+
+
+        <div class="card-text content mt-3">
+            <div class="qn_buttons clearfix allquestionsononepage"><a class="qnbutton correct free btn thispage" id="quiznavbutton1" title="Correct" data-quiz-page="0" href="#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>1<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton correct free btn thispage" id="quiznavbutton2" title="Correct" data-quiz-page="0" href="#question-1242931-2"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>2<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton correct free btn thispage" id="quiznavbutton3" title="Correct" data-quiz-page="0" href="#question-1242931-3"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>3<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton correct free btn thispage" id="quiznavbutton4" title="Correct" data-quiz-page="0" href="#question-1242931-4"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>4<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton correct free btn thispage" id="quiznavbutton5" title="Correct" data-quiz-page="0" href="#question-1242931-5"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>5<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton correct free btn thispage" id="quiznavbutton6" title="Correct" data-quiz-page="0" href="#question-1242931-6"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>6<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton correct free btn thispage" id="quiznavbutton7" title="Correct" data-quiz-page="0" href="#question-1242931-7"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>7<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton correct free btn thispage" id="quiznavbutton8" title="Correct" data-quiz-page="0" href="#question-1242931-8"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>8<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton correct free btn thispage" id="quiznavbutton9" title="Correct" data-quiz-page="0" href="#question-1242931-9"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>9<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton correct free btn thispage" id="quiznavbutton10" title="Correct" data-quiz-page="0" href="#question-1242931-10"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>10<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton correct free btn thispage" id="quiznavbutton11" title="Correct" data-quiz-page="0" href="#question-1242931-11"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>11<span class="accesshide"> This page <span class="flagstate"></span></span></a></div><div class="othernav"><a class="mod_quiz-next-nav" href="https://eclass.e.southern.edu/mod/quiz/view.php?id=1021046">Finish review</a></div>
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
             <div class="footer"></div>
             
         </div>
@@ -855,7 +1209,11 @@ document.body.className += ' jsenabled';
         </div>
     </div>
     <div
+<<<<<<< HEAD
     id="drawer-601a0046b04a8601a0046896e015"
+=======
+    id="drawer-6032ff4f863e56032ff4f598e915"
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
     class=" drawer bg-white hidden"
     aria-expanded="false"
     aria-hidden="true"
@@ -863,7 +1221,11 @@ document.body.className += ' jsenabled';
     role="region"
     tabindex="0"
 >
+<<<<<<< HEAD
             <div id="message-drawer-601a0046b04a8601a0046896e015" class="message-app" data-region="message-drawer" role="region">
+=======
+            <div id="message-drawer-6032ff4f863e56032ff4f598e915" class="message-app" data-region="message-drawer" role="region">
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
             <div class="closewidget bg-light border-bottom text-right">
                 <a class="text-dark" data-action="closedrawer" href="#">
                      <i class="icon fa fa-window-close fa-fw "  title="Close" aria-label="Close"></i>
@@ -1050,6 +1412,7 @@ document.body.className += ' jsenabled';
                             <ul class="nav nav-pills nav-fill" role="tablist">
                                 <li class="nav-item">
                                     <a
+<<<<<<< HEAD
                                         id="contacts-tab-601a0046b04a8601a0046896e015"
                                         class="nav-link active"
                                         href="#contacts-tab-panel-601a0046b04a8601a0046896e015"
@@ -1057,6 +1420,15 @@ document.body.className += ' jsenabled';
                                         data-action="show-contacts-section"
                                         role="tab"
                                         aria-controls="contacts-tab-panel-601a0046b04a8601a0046896e015"
+=======
+                                        id="contacts-tab-6032ff4f863e56032ff4f598e915"
+                                        class="nav-link active"
+                                        href="#contacts-tab-panel-6032ff4f863e56032ff4f598e915"
+                                        data-toggle="tab"
+                                        data-action="show-contacts-section"
+                                        role="tab"
+                                        aria-controls="contacts-tab-panel-6032ff4f863e56032ff4f598e915"
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
                                         aria-selected="true"
                                     >
                                         Contacts
@@ -1064,6 +1436,7 @@ document.body.className += ' jsenabled';
                                 </li>
                                 <li class="nav-item">
                                     <a
+<<<<<<< HEAD
                                         id="requests-tab-601a0046b04a8601a0046896e015"
                                         class="nav-link"
                                         href="#requests-tab-panel-601a0046b04a8601a0046896e015"
@@ -1071,6 +1444,15 @@ document.body.className += ' jsenabled';
                                         data-action="show-requests-section"
                                         role="tab"
                                         aria-controls="requests-tab-panel-601a0046b04a8601a0046896e015"
+=======
+                                        id="requests-tab-6032ff4f863e56032ff4f598e915"
+                                        class="nav-link"
+                                        href="#requests-tab-panel-6032ff4f863e56032ff4f598e915"
+                                        data-toggle="tab"
+                                        data-action="show-requests-section"
+                                        role="tab"
+                                        aria-controls="requests-tab-panel-6032ff4f863e56032ff4f598e915"
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
                                         aria-selected="false"
                                     >
                                         Requests
@@ -1089,10 +1471,17 @@ document.body.className += ' jsenabled';
                     aria-live="polite"
                     data-region="lazy-load-list"
                     data-user-id="17062"
+<<<<<<< HEAD
                                         id="contacts-tab-panel-601a0046b04a8601a0046896e015"
                     data-section="contacts"
                     role="tabpanel"
                     aria-labelledby="contacts-tab-601a0046b04a8601a0046896e015"
+=======
+                                        id="contacts-tab-panel-6032ff4f863e56032ff4f598e915"
+                    data-section="contacts"
+                    role="tabpanel"
+                    aria-labelledby="contacts-tab-6032ff4f863e56032ff4f598e915"
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
 
                 >
                     
@@ -1115,10 +1504,17 @@ document.body.className += ' jsenabled';
                     aria-live="polite"
                     data-region="lazy-load-list"
                     data-user-id="17062"
+<<<<<<< HEAD
                                         id="requests-tab-panel-601a0046b04a8601a0046896e015"
                     data-section="requests"
                     role="tabpanel"
                     aria-labelledby="requests-tab-601a0046b04a8601a0046896e015"
+=======
+                                        id="requests-tab-panel-6032ff4f863e56032ff4f598e915"
+                    data-section="requests"
+                    role="tabpanel"
+                    aria-labelledby="requests-tab-6032ff4f863e56032ff4f598e915"
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
 
                 >
                     
@@ -1143,7 +1539,11 @@ document.body.className += ' jsenabled';
                     aria-hidden="true"
                     data-region="view-conversation"
                     data-user-id="17062"
+<<<<<<< HEAD
                     data-midnight="1612242000"
+=======
+                    data-midnight="1613883600"
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
                     data-message-poll-min="10"
                     data-message-poll-max="120"
                     data-message-poll-after-max="300"
@@ -1473,7 +1873,11 @@ document.body.className += ' jsenabled';
                         style="overflow-y: auto"
                     ></div>
                 </div>                <div class="h-100 view-overview-body" aria-hidden="false" data-region="view-overview"  data-user-id="17062">
+<<<<<<< HEAD
                     <div id="message-drawer-view-overview-container-601a0046b04a8601a0046896e015" class="d-flex flex-column h-100" style="overflow-y: auto">
+=======
+                    <div id="message-drawer-view-overview-container-6032ff4f863e56032ff4f598e915" class="d-flex flex-column h-100" style="overflow-y: auto">
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
                             
                             
                             <div
@@ -1484,9 +1888,15 @@ document.body.className += ' jsenabled';
                                     <button
                                         class="btn btn-link w-100 text-left p-1 p-sm-2 d-flex align-items-center overview-section-toggle collapsed"
                                         data-toggle="collapse"
+<<<<<<< HEAD
                                         data-target="#view-overview-favourites-target-601a0046b04a8601a0046896e015"
                                         aria-expanded="false"
                                         aria-controls="view-overview-favourites-target-601a0046b04a8601a0046896e015"
+=======
+                                        data-target="#view-overview-favourites-target-6032ff4f863e56032ff4f598e915"
+                                        aria-expanded="false"
+                                        aria-controls="view-overview-favourites-target-6032ff4f863e56032ff4f598e915"
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
                                     >
                                         <span class="collapsed-icon-container">
                                             <i class="icon fa fa-caret-right fa-fw " aria-hidden="true"  ></i>
@@ -1514,9 +1924,15 @@ document.body.className += ' jsenabled';
                                 aria-live="polite"
                                 data-region="lazy-load-list"
                                 data-user-id="17062"
+<<<<<<< HEAD
                                             id="view-overview-favourites-target-601a0046b04a8601a0046896e015"
             aria-labelledby="view-overview-favourites-toggle"
             data-parent="#message-drawer-view-overview-container-601a0046b04a8601a0046896e015"
+=======
+                                            id="view-overview-favourites-target-6032ff4f863e56032ff4f598e915"
+            aria-labelledby="view-overview-favourites-toggle"
+            data-parent="#message-drawer-view-overview-container-6032ff4f863e56032ff4f598e915"
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
 
                             >
                                 
@@ -1547,9 +1963,15 @@ document.body.className += ' jsenabled';
                                     <button
                                         class="btn btn-link w-100 text-left p-1 p-sm-2 d-flex align-items-center overview-section-toggle collapsed"
                                         data-toggle="collapse"
+<<<<<<< HEAD
                                         data-target="#view-overview-group-messages-target-601a0046b04a8601a0046896e015"
                                         aria-expanded="false"
                                         aria-controls="view-overview-group-messages-target-601a0046b04a8601a0046896e015"
+=======
+                                        data-target="#view-overview-group-messages-target-6032ff4f863e56032ff4f598e915"
+                                        aria-expanded="false"
+                                        aria-controls="view-overview-group-messages-target-6032ff4f863e56032ff4f598e915"
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
                                     >
                                         <span class="collapsed-icon-container">
                                             <i class="icon fa fa-caret-right fa-fw " aria-hidden="true"  ></i>
@@ -1577,9 +1999,15 @@ document.body.className += ' jsenabled';
                                 aria-live="polite"
                                 data-region="lazy-load-list"
                                 data-user-id="17062"
+<<<<<<< HEAD
                                             id="view-overview-group-messages-target-601a0046b04a8601a0046896e015"
             aria-labelledby="view-overview-group-messages-toggle"
             data-parent="#message-drawer-view-overview-container-601a0046b04a8601a0046896e015"
+=======
+                                            id="view-overview-group-messages-target-6032ff4f863e56032ff4f598e915"
+            aria-labelledby="view-overview-group-messages-toggle"
+            data-parent="#message-drawer-view-overview-container-6032ff4f863e56032ff4f598e915"
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
 
                             >
                                 
@@ -1610,9 +2038,15 @@ document.body.className += ' jsenabled';
                                     <button
                                         class="btn btn-link w-100 text-left p-1 p-sm-2 d-flex align-items-center overview-section-toggle collapsed"
                                         data-toggle="collapse"
+<<<<<<< HEAD
                                         data-target="#view-overview-messages-target-601a0046b04a8601a0046896e015"
                                         aria-expanded="false"
                                         aria-controls="view-overview-messages-target-601a0046b04a8601a0046896e015"
+=======
+                                        data-target="#view-overview-messages-target-6032ff4f863e56032ff4f598e915"
+                                        aria-expanded="false"
+                                        aria-controls="view-overview-messages-target-6032ff4f863e56032ff4f598e915"
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
                                     >
                                         <span class="collapsed-icon-container">
                                             <i class="icon fa fa-caret-right fa-fw " aria-hidden="true"  ></i>
@@ -1640,9 +2074,15 @@ document.body.className += ' jsenabled';
                                 aria-live="polite"
                                 data-region="lazy-load-list"
                                 data-user-id="17062"
+<<<<<<< HEAD
                                             id="view-overview-messages-target-601a0046b04a8601a0046896e015"
             aria-labelledby="view-overview-messages-toggle"
             data-parent="#message-drawer-view-overview-container-601a0046b04a8601a0046896e015"
+=======
+                                            id="view-overview-messages-target-6032ff4f863e56032ff4f598e915"
+            aria-labelledby="view-overview-messages-toggle"
+            data-parent="#message-drawer-view-overview-container-6032ff4f863e56032ff4f598e915"
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
 
                             >
                                 
@@ -1731,10 +2171,17 @@ document.body.className += ' jsenabled';
                                                 type="radio"
                                                 name="message_blocknoncontacts"
                                                 class="custom-control-input"
+<<<<<<< HEAD
                                                 id="block-noncontacts-601a0046b04a8601a0046896e015-1"
                                                 value="1"
                                             >
                                             <label class="custom-control-label ml-2" for="block-noncontacts-601a0046b04a8601a0046896e015-1">
+=======
+                                                id="block-noncontacts-6032ff4f863e56032ff4f598e915-1"
+                                                value="1"
+                                            >
+                                            <label class="custom-control-label ml-2" for="block-noncontacts-6032ff4f863e56032ff4f598e915-1">
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
                                                 My contacts only
                                             </label>
                                         </div>
@@ -1743,10 +2190,17 @@ document.body.className += ' jsenabled';
                                                 type="radio"
                                                 name="message_blocknoncontacts"
                                                 class="custom-control-input"
+<<<<<<< HEAD
                                                 id="block-noncontacts-601a0046b04a8601a0046896e015-0"
                                                 value="0"
                                             >
                                             <label class="custom-control-label ml-2" for="block-noncontacts-601a0046b04a8601a0046896e015-0">
+=======
+                                                id="block-noncontacts-6032ff4f863e56032ff4f598e915-0"
+                                                value="0"
+                                            >
+                                            <label class="custom-control-label ml-2" for="block-noncontacts-6032ff4f863e56032ff4f598e915-0">
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
                                                 My contacts and anyone in my courses
                                             </label>
                                         </div>
@@ -1760,8 +2214,13 @@ document.body.className += ' jsenabled';
                             <h3 class="mb-2 mt-4 h6 font-weight-bold">General</h3>
                             <div data-preference="entertosend">
                                 <div class="custom-control custom-switch">
+<<<<<<< HEAD
                                     <input type="checkbox" class="custom-control-input" id="enter-to-send-601a0046b04a8601a0046896e015" >
                                     <label class="custom-control-label" for="enter-to-send-601a0046b04a8601a0046896e015">
+=======
+                                    <input type="checkbox" class="custom-control-input" id="enter-to-send-6032ff4f863e56032ff4f598e915" >
+                                    <label class="custom-control-label" for="enter-to-send-6032ff4f863e56032ff4f598e915">
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
                                         Use enter to send
                                     </label>
                                 </div>
@@ -1919,13 +2378,20 @@ document.body.className += ' jsenabled';
             <div id="course-footer"></div>
     
     
+<<<<<<< HEAD
             <div class="logininfo">You are logged in as <a href="https://eclass.e.southern.edu/user/profile.php?id=17062" title="View profile">Miro Manestar</a> (<a href="https://eclass.e.southern.edu/login/logout.php?sesskey=2j1RFvndmv">Log out</a>)</div>
             <div class="tool_usertours-resettourcontainer"></div>
             <div class="homelink"><a href="https://eclass.e.southern.edu/course/view.php?id=42401">W21 CPTR-427-A</a></div>
+=======
+            <div class="logininfo">You are logged in as <a href="https://eclass.e.southern.edu/user/profile.php?id=17062" title="View profile">Miro Manestar</a> (<a href="https://eclass.e.southern.edu/login/logout.php?sesskey=I1GNJE0yGR">Log out</a>)</div>
+            <div class="tool_usertours-resettourcontainer"></div>
+            <div class="homelink"><a href="https://eclass.e.southern.edu/course/view.php?id=42399">W21 CPTR-319-A</a></div>
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
             <nav class="nav navbar-nav d-md-none" aria-label="Custom menu">
                     <ul class="list-unstyled pt-3">
                     </ul>
             </nav>
+<<<<<<< HEAD
             
             
 <br>
@@ -1933,15 +2399,29 @@ document.body.className += ' jsenabled';
 //<![CDATA[
 var require = {
     baseUrl : 'https://eclass.e.southern.edu/lib/requirejs.php/1612253157/',
+=======
+            <a href="https://www.openlms.net/open-lms-mobile-app/">Get the mobile app</a>
+            
+<a href="https://www.southern.edu/academics/academic-sites/online-campus/index.html#resources">eClass Tutorials</a><script>
+//<![CDATA[
+var require = {
+    baseUrl : 'https://eclass.e.southern.edu/lib/requirejs.php/1613722060/',
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
     // We only support AMD modules with an explicit define() statement.
     enforceDefine: true,
     skipDataMain: true,
     waitSeconds : 0,
 
     paths: {
+<<<<<<< HEAD
         jquery: 'https://eclass.e.southern.edu/lib/javascript.php/1612253157/lib/jquery/jquery-3.4.1.min',
         jqueryui: 'https://eclass.e.southern.edu/lib/javascript.php/1612253157/lib/jquery/ui-1.12.1/jquery-ui.min',
         jqueryprivate: 'https://eclass.e.southern.edu/lib/javascript.php/1612253157/lib/requirejs/jquery-private'
+=======
+        jquery: 'https://eclass.e.southern.edu/lib/javascript.php/1613722060/lib/jquery/jquery-3.4.1.min',
+        jqueryui: 'https://eclass.e.southern.edu/lib/javascript.php/1613722060/lib/jquery/ui-1.12.1/jquery-ui.min',
+        jqueryprivate: 'https://eclass.e.southern.edu/lib/javascript.php/1613722060/lib/requirejs/jquery-private'
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
     },
 
     // Custom jquery config map.
@@ -1961,7 +2441,11 @@ var require = {
 
 //]]>
 </script>
+<<<<<<< HEAD
 <script src="https://eclass.e.southern.edu/lib/javascript.php/1612253157/lib/requirejs/require.min.js"></script>
+=======
+<script src="https://eclass.e.southern.edu/lib/javascript.php/1613722060/lib/requirejs/require.min.js"></script>
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
 <script>
 //<![CDATA[
 M.util.js_pending("core/first");require(['core/first'], function() {
@@ -2062,6 +2546,14 @@ videojs.addLanguage('en', {
 
     });
 });;
+<<<<<<< HEAD
+=======
+function legacy_activity_onclick_handler_1(e) { e.halt(); window.open('https://eclass.e.southern.edu/mod/url/view.php?id=1014183&redirect=1'); return false; };
+function legacy_activity_onclick_handler_2(e) { e.halt(); window.open('https://eclass.e.southern.edu/mod/url/view.php?id=1014187&redirect=1'); return false; };
+function legacy_activity_onclick_handler_3(e) { e.halt(); window.open('https://eclass.e.southern.edu/mod/url/view.php?id=1014190&redirect=1'); return false; };
+function legacy_activity_onclick_handler_4(e) { e.halt(); window.open('https://eclass.e.southern.edu/mod/url/view.php?id=1014193&redirect=1'); return false; };
+function legacy_activity_onclick_handler_5(e) { e.halt(); window.open('https://eclass.e.southern.edu/mod/resource/view.php?id=1014196&redirect=1'); return false; };
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
 M.util.js_pending('report_allylti/main'); require(['report_allylti/main'], function(amd) {amd.init(); M.util.js_complete('report_allylti/main');});;
 
 require(['jquery', 'message_popup/notification_popover_controller'], function($, controller) {
@@ -2081,7 +2573,11 @@ function(
     $,
     Popover
 ) {
+<<<<<<< HEAD
     var toggle = $('#message-drawer-toggle-601a0046a630f601a0046896e05');
+=======
+    var toggle = $('#message-drawer-toggle-6032ff4f7b1c26032ff4f598e95');
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
     Popover.init(toggle);
 });
 ;
@@ -2092,14 +2588,23 @@ function(
                 if (!$(this).val()) {
                     return false;
                 }
+<<<<<<< HEAD
                 $('#url_select_f601a0046896e014').submit();
+=======
+                $('#url_select_f6032ff4f598e914').submit();
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
             });
         });
     ;
 
 require(['jquery', 'core_message/message_drawer'], function($, MessageDrawer) {
+<<<<<<< HEAD
     var root = $('#message-drawer-601a0046b04a8601a0046896e015');
     MessageDrawer.init(root, '601a0046b04a8601a0046896e015', false);
+=======
+    var root = $('#message-drawer-6032ff4f863e56032ff4f598e915');
+    MessageDrawer.init(root, '6032ff4f863e56032ff4f598e915', false);
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
 });
 ;
 
@@ -2114,6 +2619,7 @@ require(['theme_boost/drawer'], function(drawer) {
     M.util.js_complete('theme_boost/drawer');
 });
 ;
+<<<<<<< HEAD
 M.util.js_pending('qtype_multichoice/answers'); require(['qtype_multichoice/answers'], function(amd) {amd.init("question-1224988-10"); M.util.js_complete('qtype_multichoice/answers');});;
 M.util.js_pending('qtype_multichoice/answers'); require(['qtype_multichoice/answers'], function(amd) {amd.init("question-1224988-8"); M.util.js_complete('qtype_multichoice/answers');});;
 M.util.js_pending('qtype_multichoice/answers'); require(['qtype_multichoice/answers'], function(amd) {amd.init("question-1224988-7"); M.util.js_complete('qtype_multichoice/answers');});;
@@ -2127,6 +2633,11 @@ M.util.js_pending('qtype_multichoice/answers'); require(['qtype_multichoice/answ
 M.util.js_pending('theme_snap/wcloader'); require(['theme_snap/wcloader'], function(amd) {amd.init("{\"theme_snap\\\/snapce\":[\"https:\\\/\\\/eclass.e.southern.edu\\\/pluginfile.php\\\/1331036\\\/theme_snap\\\/vendorjs\\\/snap-custom-elements\\\/snap-ce\"]}"); M.util.js_complete('theme_snap/wcloader');});;
 M.util.js_pending('local_ce/wcloader'); require(['local_ce/wcloader'], function(amd) {amd.init("[]"); M.util.js_complete('local_ce/wcloader');});;
 M.util.js_pending('core/notification'); require(['core/notification'], function(amd) {amd.init(1331036, [], true); M.util.js_complete('core/notification');});;
+=======
+M.util.js_pending('theme_snap/wcloader'); require(['theme_snap/wcloader'], function(amd) {amd.init("{\"theme_snap\\\/snapce\":[\"https:\\\/\\\/eclass.e.southern.edu\\\/pluginfile.php\\\/1317307\\\/theme_snap\\\/vendorjs\\\/snap-custom-elements\\\/snap-ce\"]}"); M.util.js_complete('theme_snap/wcloader');});;
+M.util.js_pending('local_ce/wcloader'); require(['local_ce/wcloader'], function(amd) {amd.init("[]"); M.util.js_complete('local_ce/wcloader');});;
+M.util.js_pending('core/notification'); require(['core/notification'], function(amd) {amd.init(1317307, [], true); M.util.js_complete('core/notification');});;
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
 M.util.js_pending('core/log'); require(['core/log'], function(amd) {amd.setConfig({"level":"warn"}); M.util.js_complete('core/log');});;
 M.util.js_pending('core/page_global'); require(['core/page_global'], function(amd) {amd.init(); M.util.js_complete('core/page_global');});M.util.js_complete("core/first");
 });
@@ -2134,7 +2645,11 @@ M.util.js_pending('core/page_global'); require(['core/page_global'], function(am
 </script>
 <script>
 //<![CDATA[
+<<<<<<< HEAD
 M.yui.add_module({"core_question_engine":{"name":"core_question_engine","fullpath":"https:\/\/eclass.e.southern.edu\/lib\/javascript.php\/1612253157\/question\/qengine.js","requires":["node","event"]},"mod_quiz":{"name":"mod_quiz","fullpath":"https:\/\/eclass.e.southern.edu\/lib\/javascript.php\/1612253157\/mod\/quiz\/module.js","requires":["base","dom","event-delegate","event-key","core_question_engine","moodle-core-formchangechecker"]}});
+=======
+M.yui.add_module({"qtype_multianswer":{"name":"qtype_multianswer","fullpath":"https:\/\/eclass.e.southern.edu\/lib\/javascript.php\/1613722060\/question\/type\/multianswer\/module.js","requires":["base","node","event","overlay"]},"core_question_engine":{"name":"core_question_engine","fullpath":"https:\/\/eclass.e.southern.edu\/lib\/javascript.php\/1613722060\/question\/qengine.js","requires":["node","event"]},"mod_quiz":{"name":"mod_quiz","fullpath":"https:\/\/eclass.e.southern.edu\/lib\/javascript.php\/1613722060\/mod\/quiz\/module.js","requires":["base","dom","event-delegate","event-key","core_question_engine","moodle-core-formchangechecker"]}});
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
 
 //]]>
 </script>
@@ -2149,11 +2664,23 @@ M.str = {"moodle":{"lastmodified":"Last modified","name":"Name","error":"Error",
 });
 Y.use("moodle-filter_glossary-autolinker",function() {M.filter_glossary.init_filter_autolinking({"courseid":0});
 });
+<<<<<<< HEAD
  M.util.js_pending('random601a0046896e01'); Y.use('core_question_flags', function(Y) { M.core_question_flags.init(Y, "https:\/\/eclass.e.southern.edu\/question\/toggleflag.php", [{"src":"https:\/\/eclass.e.southern.edu\/theme\/image.php\/boost\/core\/1612253157\/i\/unflagged","title":"Flag this question for future reference","alt":"Not flagged"},{"src":"https:\/\/eclass.e.southern.edu\/theme\/image.php\/boost\/core\/1612253157\/i\/flagged","title":"Remove flag","alt":"Flagged"}], ["Flag question","Remove flag"]);  M.util.js_complete('random601a0046896e01'); });
  M.util.js_pending('random601a0046896e02'); Y.use('mod_quiz', function(Y) { M.mod_quiz.nav.init(Y);  M.util.js_complete('random601a0046896e02'); });
 M.util.help_popups.setup(Y);
  M.util.js_pending('random601a0046896e016'); Y.use('mod_quiz', function(Y) { M.mod_quiz.init_review_form(Y);  M.util.js_complete('random601a0046896e016'); });
  M.util.js_pending('random601a0046896e017'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random601a0046896e017'); });
+=======
+ M.util.js_pending('random6032ff4f598e91'); Y.use('core_question_flags', function(Y) { M.core_question_flags.init(Y, "https:\/\/eclass.e.southern.edu\/question\/toggleflag.php", [{"src":"https:\/\/eclass.e.southern.edu\/theme\/image.php\/boost\/core\/1613722060\/i\/unflagged","title":"Flag this question for future reference","alt":"Not flagged"},{"src":"https:\/\/eclass.e.southern.edu\/theme\/image.php\/boost\/core\/1613722060\/i\/flagged","title":"Remove flag","alt":"Flagged"}], ["Flag question","Remove flag"]);  M.util.js_complete('random6032ff4f598e91'); });
+ M.util.js_pending('random6032ff4f598e92'); Y.use('mod_quiz', function(Y) { M.mod_quiz.nav.init(Y);  M.util.js_complete('random6032ff4f598e92'); });
+M.util.help_popups.setup(Y);
+ M.util.js_pending('random6032ff4f598e916'); Y.use('qtype_multianswer', function(Y) { M.qtype_multianswer.init(Y, "#question-1242931-1");  M.util.js_complete('random6032ff4f598e916'); });
+ M.util.js_pending('random6032ff4f598e917'); Y.use('qtype_multianswer', function(Y) { M.qtype_multianswer.init(Y, "#question-1242931-2");  M.util.js_complete('random6032ff4f598e917'); });
+ M.util.js_pending('random6032ff4f598e918'); Y.use('qtype_multianswer', function(Y) { M.qtype_multianswer.init(Y, "#question-1242931-3");  M.util.js_complete('random6032ff4f598e918'); });
+ M.util.js_pending('random6032ff4f598e919'); Y.use('qtype_multianswer', function(Y) { M.qtype_multianswer.init(Y, "#question-1242931-4");  M.util.js_complete('random6032ff4f598e919'); });
+ M.util.js_pending('random6032ff4f598e920'); Y.use('mod_quiz', function(Y) { M.mod_quiz.init_review_form(Y);  M.util.js_complete('random6032ff4f598e920'); });
+ M.util.js_pending('random6032ff4f598e921'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random6032ff4f598e921'); });
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
 })();
 //]]>
 </script>
@@ -2162,5 +2689,9 @@ M.util.help_popups.setup(Y);
     </footer>
 </div>
 
+<<<<<<< HEAD
 <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","licenseKey":"06560f3a30","applicationID":"5367078","transactionName":"YFxbZkVQW0ZRARBaDlkWbEBeHlhaVE0VRghNFktXQVhQQh4SDEM=","queueTime":0,"applicationTime":318,"atts":"TBtMEA1KSBkSA0YJGkpE","errorBeacon":"bam-cell.nr-data.net","agent":""}</script></body>
+=======
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","licenseKey":"06560f3a30","applicationID":"5367078","transactionName":"YFxbZkVQW0ZRARBaDlkWbEBeHlhaVE0VRghNFktXQVhQQh4SDEM=","queueTime":0,"applicationTime":330,"atts":"TBtMEA1KSBkSA0YJGkpE","errorBeacon":"bam-cell.nr-data.net","agent":""}</script></body>
+>>>>>>> 2c5921b8857aa400bc2d2ad8760052ae76aa2a6b
 </html>

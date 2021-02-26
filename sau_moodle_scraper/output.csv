@@ -1,15 +1,14 @@
 Questions,Answers
-1. Full device encryption is one way of protecting a mobile device's data if the device is stolen.,True
-2. Storage DLP systems are typically installed in data centers or server rooms as software that inspects data at rest.,True
-3. Botnets do not affect mobile devices.,False
-4. Which of the following is an inline device that checks all packets?,Network intrusion detection system
-5. Which of the following is an example of whole disk encryption?,BitLocker
-6. Flashing is a term that describes the updating of the BIOS.,True
-7. An example of a Windows firewall is iptables.,False
-"8. In the case of theft, the two best ways to protect against the loss of confidential or sensitive information are encryption and a remote wipe program.",True
-9. Personal firewalls are applications that protect an individual computer from unwanted Internet traffic.,True
-10. Which of the following is an example of a personal software firewall?,ZoneAlarm
-11. What are two ways of discouraging bluesnarfing? (Select the two best answers.),"Select a pairing key that is not easy to guess., Set the device to undiscoverable."
-12. Which of the following occurs when an IDS identifies legitimate activity as something malicious?,False positive
-13. Bluejacking is the unauthorized access of information from a wireless device through a Bluetooth connection.,False
-14. Which of the following can help to secure the BIOS of a computer? (Select the two best answers.),"Use a case lock., Use a BIOS supervisor password."
+"1. If a server has inbound port 21 open, what service is it running?",File Transfer Protocol
+"2. To use the Lightweight Directory Access Protocol (LDAP) in a secure fashion, what port should be used?",636
+3. Which of the following commands can be used to turn off a service?,net stop
+4. Which of the following port numbers is used by the Character Generator (CHARGEN)?,19
+5. Your boss wants you to secure your web server's transactions. Which protocol and port number should you use to accomplish this?,HTTPS - port 443
+6. Which of the following is not a denial-of-service attack?,Replay attack
+7. Which of the following can best be described as the exploitation of a computer session in an attempt to gain unauthorized access to data?,Session hijacking
+8. Which of the following are ways to help defend against distributed denial-of-service attacks? (Select the three best answers.),"Update firewalls., Use intrusion prevention systems., Use a ""clean pipe."""
+9. Port 88 is used by Kerberos.,True
+10. Syslog uses port 161.,False
+11. Port 53 is used by the DoS protocol.,False
+12. RADIUS uses port 1812.,True
+13. Port 443 is used by Ms-sql-s.,False
