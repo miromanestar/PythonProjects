@@ -1,14 +1,11 @@
 Questions,Answers
-"1. If a server has inbound port 21 open, what service is it running?",File Transfer Protocol
-"2. To use the Lightweight Directory Access Protocol (LDAP) in a secure fashion, what port should be used?",636
-3. Which of the following commands can be used to turn off a service?,net stop
-4. Which of the following port numbers is used by the Character Generator (CHARGEN)?,19
-5. Your boss wants you to secure your web server's transactions. Which protocol and port number should you use to accomplish this?,HTTPS - port 443
-6. Which of the following is not a denial-of-service attack?,Replay attack
-7. Which of the following can best be described as the exploitation of a computer session in an attempt to gain unauthorized access to data?,Session hijacking
-8. Which of the following are ways to help defend against distributed denial-of-service attacks? (Select the three best answers.),"Update firewalls., Use intrusion prevention systems., Use a ""clean pipe."""
-9. Port 88 is used by Kerberos.,True
-10. Syslog uses port 161.,False
-11. Port 53 is used by the DoS protocol.,False
-12. RADIUS uses port 1812.,True
-13. Port 443 is used by Ms-sql-s.,False
+1. Which of the following data sensitivity classifications is often broken into sections on a need-to-know basis?,Top secret information
+"2. Which act governs the collection, use, and dissemination of personally identifiable information?",Privacy Act of 1974
+3. Which of the following types of policies define the rules that restrict how a computer or other system may be used by an employee?,Acceptable use
+4. Which of the following can be summed up as ensuring that IT infrastructure risks are known and managed?,Due diligence
+"5. In a standard incident response process, which of the following steps happens after containment?",Eradication
+6. The first phase of the incident response process is Identification.,False
+"7. In data sensitivity classifications, information available to anyone is called public information.",True
+8. The Sarbanes-Oxley (SOX) act governs the disclosure of financial and accounting information.,True
+9. Change management is when more than one person is required to complete a particular task or operation.,False
+10. Due process refers to the principle that an organization must respect and safeguard personnel's rights.,True
