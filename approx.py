@@ -19,5 +19,5 @@ for x in range(0, 11):
     print('x = {}'.format(x))
     print('Exact: {}, Approx: {}'.format(exact, approx_val))
     print('Absolute error = {}'.format(abs(exact - approx_val)))
-    print('Error Bound: {}'.format(f_3prime(x) * h**2 * 1/6))
+    print('Error Bound: {}'.format(f_3prime(x) * h**2 * 1/3))
     print()
